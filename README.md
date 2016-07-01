@@ -47,7 +47,7 @@
 * @param $ip string IP адрес
 * @return array Массив с информацией о регионе
 */
-\Prominado\Bootstrap\CFunctions::getIPInfo()
+\Prominado\Bootstrap\CFunctions::getIPInfo($ip)
 
 /**
 * Получение координат точки по адресу
