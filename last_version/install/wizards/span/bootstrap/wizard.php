@@ -7,7 +7,7 @@ use \Bitrix\Main\IO;
 require_once(Application::getDocumentRoot() . "/bitrix/modules/main/install/wizard_sol/wizard.php");
 
 Loc::loadMessages(__FILE__);
-// TODO: Все скинуть в ланг файлы
+
 class SelectSiteStep extends CSelectSiteWizardStep
 {
     function InitStep()
@@ -83,17 +83,17 @@ class SiteSettingsStep extends CSiteSettingsWizardStep
         $template_description = $wizard->GetVar("template_description");
         $template_path = $wizard->GetVar("template_path");
 
-        if(!$site_name)$this->SetError("Не указано название сайта");
-        if(!$site_email)$this->SetError("Не указана эл. почта");
-        if(!$template_name)$this->SetError("Не указано название шаблона");
-        if(!$template_description)$this->SetError("Не указано описание шаблона");
-        if(!$template_path)$this->SetError("Не указана папка шаблона");
-        if(!preg_match('#^[A-Za-z0-9_]+$#is', $template_path))$this->SetError("Папка шаблона указана некорректно");
+        if(!$site_name)$this->SetError(Loc::getMessage("PROMINADO_BOOTSTRAP_INSTALL_ERROR_SITE_NAME"));
+        if(!$site_email)$this->SetError(Loc::getMessage("PROMINADO_BOOTSTRAP_INSTALL_ERROR_EMAIL"));
+        if(!$template_name)$this->SetError(Loc::getMessage("PROMINADO_BOOTSTRAP_INSTALL_ERROR_TEMPLATE"));
+        if(!$template_description)$this->SetError(Loc::getMessage("PROMINADO_BOOTSTRAP_INSTALL_ERROR_TEMPLATE_DESC"));
+        if(!$template_path)$this->SetError(Loc::getMessage("PROMINADO_BOOTSTRAP_INSTALL_ERROR_TEMPLATE_PATH"));
+        if(!preg_match('#^[A-Za-z0-9_]+$#is', $template_path))$this->SetError(Loc::getMessage("PROMINADO_BOOTSTRAP_INSTALL_ERROR_TEMPLATE_PATH_CORRECT"));
 
         $dir = new IO\Directory(Application::getDocumentRoot() . "/local/templates/" . $template_path . "/");
         if($dir->isExists())
         {
-            $this->SetError("Шаблон уже существует");
+            $this->SetError(Loc::getMessage("PROMINADO_BOOTSTRAP_INSTALL_ERROR_TEMPLATE_PATH_EXIST"));
         }
     }
 }
@@ -135,7 +135,7 @@ class DeveloperStep extends CWizardStep
         $this->content .= '<div class="wizard-input-form-block">
                 ' . $this->ShowCheckboxField("showDeveloperData", "Y",
                     (array("id" => "show-developer-data", "onClick" => "if(this.checked == true){document.getElementById('prominado_developer').style.display='block';}else{document.getElementById('prominado_developer').style.display='none';}"))) . '
-                <label for="show-developer-data" class="wizard-input-title">Заполнить данные о разработчике</label>
+                <label for="show-developer-data" class="wizard-input-title">' . Loc::getMessage("PROMINADO_BOOTSTRAP_INSTALL_DEVELOPER_SHOW") . '</label>
             </div>
             <div id="prominado_developer" ' . $styleDeveloper . '>
                 <div class="wizard-catalog-title">' . Loc::getMessage("PROMINADO_BOOTSTRAP_INSTALL_COMPANY") . '</div>
@@ -156,7 +156,7 @@ class DeveloperStep extends CWizardStep
         $this->content .= '<div class="wizard-input-form-block">
                 ' . $this->ShowCheckboxField("showHumansData", "Y",
                 (array("id" => "show-humans-data", "onClick" => "if(this.checked == true){document.getElementById('prominado_humans').style.display='block';}else{document.getElementById('prominado_humans').style.display='none';}"))) . '
-                <label for="show-humans-data" class="wizard-input-title">Заполнить Humans.txt</label>
+                <label for="show-humans-data" class="wizard-input-title">' . Loc::getMessage("PROMINADO_BOOTSTRAP_INSTALL_HUMANS_SHOW") . '</label>
             </div>
             <div id="prominado_humans" ' . $styleHumans . '>
                 <div class="wizard-catalog-title">' . Loc::getMessage("PROMINADO_BOOTSTRAP_INSTALL_HUMANS") . '</div>
@@ -182,16 +182,10 @@ class DeveloperStep extends CWizardStep
 
         $show_developer = $wizard->GetVar("showDeveloperData");
         $developer_name = $wizard->GetVar("developer_name");
-        $developer_email = $wizard->GetVar("developer_email");
-        $developer_website = $wizard->GetVar("developer_website");
-
-        $developer_manager = $wizard->GetVar("developer_manager");
-        $developer_designer = $wizard->GetVar("developer_designer");
-        $developer_senior = $wizard->GetVar("developer_senior");
 
         if($show_developer)
         {
-            if(!$developer_name)$this->SetError("Не указан разработчик");
+            if(!$developer_name)$this->SetError(Loc::getMessage("PROMINADO_BOOTSTRAP_INSTALL_ERROR_DEVELOPER"));
         }
     }
 }

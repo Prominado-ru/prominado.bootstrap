@@ -1,6 +1,6 @@
 <?php
 
-namespace Prominado\Bootstrap;
+namespace Span\Bootstrap;
 
 use \Bitrix\Main\Localization\Loc;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Prominado\Bootstrap;
+namespace Span\Bootstrap;
 
 use \Bitrix\Main\Localization\Loc;
 use \Bitrix\Main\Config\Option;
@@ -14,11 +14,11 @@ class Panel
         global $USER;
         global $APPLICATION;
 
-        if ($USER->IsAdmin() && Option::get("main", "wizard_solution", "", SITE_ID) == "prominado_bootstrap")
+        if ($USER->IsAdmin() && Option::get("main", "wizard_solution", "", SITE_ID) == "span_bootstrap")
         {
             $APPLICATION->AddPanelButton(array(
-                "HREF" => "/bitrix/admin/wizard_install.php?lang=" . LANGUAGE_ID . "&wizardName=prominado:bootstrap&wizardSiteID=" . SITE_ID . "&" . bitrix_sessid_get(),
-                "ID" => "prominado_bootstrap_wizard",
+                "HREF" => "/bitrix/admin/wizard_install.php?lang=" . LANGUAGE_ID . "&wizardName=span:bootstrap&wizardSiteID=" . SITE_ID . "&" . bitrix_sessid_get(),
+                "ID" => "span_bootstrap_wizard",
                 "ICON" => "bx-panel-site-wizard-icon",
                 "MAIN_SORT" => 2500,
                 "TYPE" => "BIG",

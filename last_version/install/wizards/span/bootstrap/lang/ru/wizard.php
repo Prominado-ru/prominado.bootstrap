@@ -24,3 +24,14 @@ $MESS["PROMINADO_BOOTSTRAP_INSTALL_FINISH"] = "Завершение устано
 $MESS["PROMINADO_BOOTSTRAP_INSTALL_TO_WEBSITE"] = "Перейти на сайт";
 $MESS["PROMINADO_BOOTSTRAP_INSTALL_TITLE"] = "Установка решения";
 $MESS["PROMINADO_BOOTSTRAP_INSTALL_END_TITLE"] = "Установка продукта завершена!";
+$MESS["PROMINADO_BOOTSTRAP_INSTALL_DEVELOPER_SHOW"] = "Заполнить данные о разработчике";
+$MESS["PROMINADO_BOOTSTRAP_INSTALL_HUMANS_SHOW"] = "Заполнить данные для humans.txt";
+
+$MESS["PROMINADO_BOOTSTRAP_INSTALL_ERROR_SITE_NAME"] = "Не введено название сайта";
+$MESS["PROMINADO_BOOTSTRAP_INSTALL_ERROR_EMAIL"] = "Не указана электронная почта";
+$MESS["PROMINADO_BOOTSTRAP_INSTALL_ERROR_TEMPLATE"] = "Не введено название шаблона";
+$MESS["PROMINADO_BOOTSTRAP_INSTALL_ERROR_TEMPLATE_DESC"] = "Не введено описание шаблона";
+$MESS["PROMINADO_BOOTSTRAP_INSTALL_ERROR_TEMPLATE_PATH"] = "Не указана папка шаблона";
+$MESS["PROMINADO_BOOTSTRAP_INSTALL_ERROR_TEMPLATE_PATH_CORRECT"] = "Папка шаблона указана некорректно";
+$MESS["PROMINADO_BOOTSTRAP_INSTALL_ERROR_TEMPLATE_PATH_EXIST"] = "Шаблон уже существует";
+$MESS["PROMINADO_BOOTSTRAP_INSTALL_ERROR_DEVELOPER"] = "Не указан разработчик";

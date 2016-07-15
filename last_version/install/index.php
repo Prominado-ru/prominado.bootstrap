@@ -38,16 +38,16 @@ class span_bootstrap extends CModule
     {
         ModuleManager::registerModule($this->MODULE_ID);
         $eventManager = \Bitrix\Main\EventManager::getInstance();
-        $eventManager->registerEventHandler("main", "OnBeforeProlog", $this->MODULE_ID, "\\Prominado\\Bootstrap\\Panel", "showPanel");
-        $eventManager->registerEventHandler("main", "OnCheckListGet", $this->MODULE_ID, "\\Prominado\\Bootstrap\\CheckList", "onCheckListGet");
+        $eventManager->registerEventHandler("main", "OnBeforeProlog", $this->MODULE_ID, "\\Span\\Bootstrap\\Panel", "showPanel");
+        $eventManager->registerEventHandler("main", "OnCheckListGet", $this->MODULE_ID, "\\Span\\Bootstrap\\CheckList", "onCheckListGet");
         return true;
     }
 
     function UnInstallDB()
     {
         $eventManager = \Bitrix\Main\EventManager::getInstance();
-        $eventManager->unRegisterEventHandler("main", "OnBeforeProlog", $this->MODULE_ID, "\\Prominado\\Bootstrap\\Panel", "showPanel");
-        $eventManager->unRegisterEventHandler("main", "OnCheckListGet", $this->MODULE_ID, "\\Prominado\\Bootstrap\\CheckList", "onCheckListGet");
+        $eventManager->unRegisterEventHandler("main", "OnBeforeProlog", $this->MODULE_ID, "\\Span\\Bootstrap\\Panel", "showPanel");
+        $eventManager->unRegisterEventHandler("main", "OnCheckListGet", $this->MODULE_ID, "\\Span\\Bootstrap\\CheckList", "onCheckListGet");
         ModuleManager::unRegisterModule($this->MODULE_ID);
 
         return true;
