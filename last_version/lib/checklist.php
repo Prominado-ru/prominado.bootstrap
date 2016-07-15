@@ -1,6 +1,6 @@
 <?php
 
-namespace Span\Bootstrap;
+namespace Prominado\Bootstrap;
 
 use \Bitrix\Main\Localization\Loc;
 
@@ -8,11 +8,15 @@ Loc::loadMessages(__FILE__);
 
 class CheckList
 {
-    static public function onCheckListGet()
+    static public function onCheckListGet($arCheckList)
     {
         $checkList = array("CATEGORIES" => Array(), "POINTS" => Array());
+        $checkList["CATEGORIES"]["PROMINADO"] = Array(
+            "NAME" => "Prominado"
+        );
         $checkList["CATEGORIES"]["PROMINADO_CONTENT"] = Array(
-            "NAME" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_CONTENT")
+            "NAME" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_CONTENT"),
+            "PARENT" => "PROMINADO"
         );
         $checkList["POINTS"]["PROMINADO_QC_DEV_SERVER"] = Array(
             "PARENT" => "PROMINADO_CONTENT",
@@ -21,7 +25,6 @@ class CheckList
             "NAME" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_DEV_NAME"),
             "DESC" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_DEV_DESCRIPTION"),
             "HOWTO" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_DEV_HOWTO"),
-            "LINKS" => "links"
         );
         $checkList["POINTS"]["PROMINADO_QC_TEST_CONTENT"] = Array(
             "PARENT" => "PROMINADO_CONTENT",
@@ -41,7 +44,7 @@ class CheckList
         );
         $checkList["CATEGORIES"]["PROMINADO_VALID"] = Array(
             "NAME" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_VALID"),
-            "LINKS" => ""
+            "PARENT" => "PROMINADO"
         );
         $checkList["POINTS"]["PROMINADO_QC_HTML"] = Array(
             "PARENT" => "PROMINADO_VALID",
@@ -69,7 +72,7 @@ class CheckList
         );
         $checkList["CATEGORIES"]["PROMINADO_TEST"] = Array(
             "NAME" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_TEST"),
-            "LINKS" => ""
+            "PARENT" => "PROMINADO"
         );
         $checkList["POINTS"]["PROMINADO_QC_FORMS"] = Array(
             "PARENT" => "PROMINADO_TEST",
@@ -153,7 +156,7 @@ class CheckList
         );
         $checkList["CATEGORIES"]["PROMINADO_ADMIN"] = Array(
             "NAME" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_ADMIN"),
-            "LINKS" => ""
+            "PARENT" => "PROMINADO"
         );
         $checkList["POINTS"]["PROMINADO_QC_TEMPLATE_NAME"] = Array(
             "PARENT" => "PROMINADO_ADMIN",
@@ -171,27 +174,26 @@ class CheckList
             "DESC" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_SITE_NAME_DESCRIPTION"),
             "HOWTO" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_SITE_NAME_HOWTO"),
         );
-
-        // todo :: Автотест почты в настройках ГМ
         $checkList["POINTS"]["PROMINADO_QC_SITE_EMAIL"] = Array(
             "PARENT" => "PROMINADO_ADMIN",
             "REQUIRE" => "Y",
-            "AUTO" => "N",
+            "AUTO" => "Y",
+            "CLASS_NAME" => "\\Prominado\\Bootstrap\\Checklist\\Checker",
+            "METHOD_NAME" => "checkSiteEmail",
             "NAME" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_SITE_EMAIL_NAME"),
             "DESC" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_SITE_EMAIL_DESCRIPTION"),
             "HOWTO" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_SITE_EMAIL_HOWTO"),
         );
-
-        // todo :: Автотест проверки сложности пароля у админов
         $checkList["POINTS"]["PROMINADO_QC_USER_ADMIN"] = Array(
             "PARENT" => "PROMINADO_ADMIN",
             "REQUIRE" => "Y",
-            "AUTO" => "N",
+            "AUTO" => "Y",
+            "CLASS_NAME" => "\\Prominado\\Bootstrap\\Checklist\\Checker",
+            "METHOD_NAME" => "checkAdminsPassword",
             "NAME" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_USER_ADMIN_NAME"),
             "DESC" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_USER_ADMIN_DESCRIPTION"),
             "HOWTO" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_USER_ADMIN_HOWTO"),
         );
-
         $checkList["POINTS"]["PROMINADO_QC_IBLOCKS"] = Array(
             "PARENT" => "PROMINADO_ADMIN",
             "REQUIRE" => "Y",
@@ -234,29 +236,19 @@ class CheckList
             "DESC" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_SITEMAP_DESCRIPTION"),
             "HOWTO" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_SITEMAP_HOWTO"),
         );
-
-        // todo :: Автотест проверка информации о разработчике
         $checkList["POINTS"]["PROMINADO_QC_DEVELOPER"] = Array(
             "PARENT" => "PROMINADO_ADMIN",
             "REQUIRE" => "Y",
-            "AUTO" => "N",
+            "AUTO" => "Y",
+            "CLASS_NAME" => "\\Prominado\\Bootstrap\\Checklist\\Checker",
+            "METHOD_NAME" => "checkDeveloperInfo",
             "NAME" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_DEVELOPER_NAME"),
             "DESC" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_DEVELOPER_DESCRIPTION"),
             "HOWTO" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_DEVELOPER_HOWTO"),
         );
         $checkList["CATEGORIES"]["PROMINADO_SECURITY"] = Array(
             "NAME" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_SECURITY"),
-            "LINKS" => ""
-        );
-
-        // todo :: Автотест проверки создания бэкапа
-        $checkList["POINTS"]["PROMINADO_QC_BACKUPS"] = Array(
-            "PARENT" => "PROMINADO_SECURITY",
-            "REQUIRE" => "Y",
-            "AUTO" => "N",
-            "NAME" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_BACKUPS_NAME"),
-            "DESC" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_BACKUPS_DESCRIPTION"),
-            "HOWTO" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_BACKUPS_HOWTO"),
+            "PARENT" => "PROMINADO"
         );
         $checkList["POINTS"]["PROMINADO_QC_ACCESS"] = Array(
             "PARENT" => "PROMINADO_SECURITY",
@@ -293,7 +285,7 @@ class CheckList
         );
         $checkList["CATEGORIES"]["PROMINADO_PERFORMANCE"] = Array(
             "NAME" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_PERFORMANCE"),
-            "LINKS" => ""
+            "PARENT" => "PROMINADO"
         );
         $checkList["POINTS"]["PROMINADO_QC_PICTURES"] = Array(
             "PARENT" => "PROMINADO_PERFORMANCE",
@@ -321,34 +313,34 @@ class CheckList
         );
         $checkList["CATEGORIES"]["PROMINADO_FINAL"] = Array(
             "NAME" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_FINAL"),
-            "LINKS" => ""
+            "PARENT" => "PROMINADO"
         );
-
-        // todo :: Автотест favicon
         $checkList["POINTS"]["PROMINADO_QC_FAVICON"] = Array(
             "PARENT" => "PROMINADO_FINAL",
             "REQUIRE" => "Y",
-            "AUTO" => "N",
+            "AUTO" => "Y",
+            "CLASS_NAME" => "\\Prominado\\Bootstrap\\Checklist\\Checker",
+            "METHOD_NAME" => "checkFavicon",
             "NAME" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_FAVICON_NAME"),
             "DESC" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_FAVICON_DESCRIPTION"),
             "HOWTO" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_FAVICON_HOWTO"),
         );
-
-        // todo :: Автотест robots.txt
         $checkList["POINTS"]["PROMINADO_QC_ROBOTS_TXT"] = Array(
             "PARENT" => "PROMINADO_FINAL",
             "REQUIRE" => "Y",
-            "AUTO" => "N",
+            "AUTO" => "Y",
+            "CLASS_NAME" => "\\Prominado\\Bootstrap\\Checklist\\Checker",
+            "METHOD_NAME" => "checkRobots",
             "NAME" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_ROBOTS_TXT_NAME"),
             "DESC" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_ROBOTS_TXT_DESCRIPTION"),
             "HOWTO" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_ROBOTS_TXT_HOWTO"),
         );
-
-        // todo :: Автотест 404
         $checkList["POINTS"]["PROMINADO_QC_404"] = Array(
             "PARENT" => "PROMINADO_FINAL",
             "REQUIRE" => "Y",
-            "AUTO" => "N",
+            "AUTO" => "Y",
+            "CLASS_NAME" => "\\Prominado\\Bootstrap\\Checklist\\Checker",
+            "METHOD_NAME" => "checkNotFound",
             "NAME" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_404_NAME"),
             "DESC" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_404_DESCRIPTION"),
             "HOWTO" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_404_HOWTO"),
@@ -378,8 +370,6 @@ class CheckList
             "DESC" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_MOBILE_VERSION_DESCRIPTION"),
             "HOWTO" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_MOBILE_VERSION_HOWTO"),
         );
-
-        // todo :: Автотест viewport
         $checkList["POINTS"]["PROMINADO_QC_VIEWPORT"] = Array(
             "PARENT" => "PROMINADO_FINAL",
             "REQUIRE" => "Y",
@@ -412,12 +402,12 @@ class CheckList
             "DESC" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_REDIRECT_DESCRIPTION"),
             "HOWTO" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_REDIRECT_HOWTO"),
         );
-
-        // todo :: Автотест humans.txt
         $checkList["POINTS"]["PROMINADO_QC_HUMANS"] = Array(
             "PARENT" => "PROMINADO_FINAL",
             "REQUIRE" => "Y",
-            "AUTO" => "N",
+            "AUTO" => "Y",
+            "CLASS_NAME" => "\\Prominado\\Bootstrap\\Checklist\\Checker",
+            "METHOD_NAME" => "checkHumans",
             "NAME" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_HUMANS_NAME"),
             "DESC" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_HUMANS_DESCRIPTION"),
             "HOWTO" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_HUMANS_HOWTO"),

@@ -6,9 +6,9 @@ use \Bitrix\Main\Application;
 
 Loc::loadMessages(__FILE__);
 
-class span_bootstrap extends CModule
+class prominado_bootstrap extends CModule
 {
-    var $MODULE_ID = "span.bootstrap";
+    var $MODULE_ID = "prominado.bootstrap";
     var $MODULE_VERSION;
     var $MODULE_VERSION_DATE;
     var $MODULE_NAME;
@@ -16,7 +16,7 @@ class span_bootstrap extends CModule
     var $MODULE_CSS;
     var $MODULE_GROUP_RIGHTS = "Y";
 
-    function span_bootstrap()
+    function prominado_bootstrap()
     {
         $arModuleVersion = array();
 
@@ -38,16 +38,16 @@ class span_bootstrap extends CModule
     {
         ModuleManager::registerModule($this->MODULE_ID);
         $eventManager = \Bitrix\Main\EventManager::getInstance();
-        $eventManager->registerEventHandler("main", "OnBeforeProlog", $this->MODULE_ID, "\\Span\\Bootstrap\\Panel", "showPanel");
-        $eventManager->registerEventHandler("main", "OnCheckListGet", $this->MODULE_ID, "\\Span\\Bootstrap\\CheckList", "onCheckListGet");
+        $eventManager->registerEventHandler("main", "OnBeforeProlog", $this->MODULE_ID, "\\Prominado\\Bootstrap\\Panel", "showPanel");
+        $eventManager->registerEventHandler("main", "OnCheckListGet", $this->MODULE_ID, "\\Prominado\\Bootstrap\\CheckList", "onCheckListGet");
         return true;
     }
 
     function UnInstallDB()
     {
         $eventManager = \Bitrix\Main\EventManager::getInstance();
-        $eventManager->unRegisterEventHandler("main", "OnBeforeProlog", $this->MODULE_ID, "\\Span\\Bootstrap\\Panel", "showPanel");
-        $eventManager->unRegisterEventHandler("main", "OnCheckListGet", $this->MODULE_ID, "\\Span\\Bootstrap\\CheckList", "onCheckListGet");
+        $eventManager->unRegisterEventHandler("main", "OnBeforeProlog", $this->MODULE_ID, "\\Prominado\\Bootstrap\\Panel", "showPanel");
+        $eventManager->unRegisterEventHandler("main", "OnCheckListGet", $this->MODULE_ID, "\\Prominado\\Bootstrap\\CheckList", "onCheckListGet");
         ModuleManager::unRegisterModule($this->MODULE_ID);
 
         return true;

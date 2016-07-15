@@ -1,6 +1,6 @@
 <?php
 
-namespace Span\Bootstrap;
+namespace Prominado\Bootstrap;
 // TODO: Перенести функции из глеба
 class Functions
 {

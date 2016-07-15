@@ -1,12 +1,12 @@
 <?php
 
-$MESS["PROMINADO_BOOTSTRAP_QC_CONTENT"] = "[Prominado] Контент";
-$MESS["PROMINADO_BOOTSTRAP_QC_VALID"] = "[Prominado] Стандарты и валидация";
-$MESS["PROMINADO_BOOTSTRAP_QC_TEST"] = "[Prominado] Тестирование функционала";
-$MESS["PROMINADO_BOOTSTRAP_QC_ADMIN"] = "[Prominado] Админка Битрикса";
-$MESS["PROMINADO_BOOTSTRAP_QC_SECURITY"] = "[Prominado] Безопасность";
-$MESS["PROMINADO_BOOTSTRAP_QC_PERFORMANCE"] = "[Prominado] Производительность";
-$MESS["PROMINADO_BOOTSTRAP_QC_FINAL"] = "[Prominado] Финальные штрихи";
+$MESS["PROMINADO_BOOTSTRAP_QC_CONTENT"] = "Контент";
+$MESS["PROMINADO_BOOTSTRAP_QC_VALID"] = "Стандарты и валидация";
+$MESS["PROMINADO_BOOTSTRAP_QC_TEST"] = "Тестирование функционала";
+$MESS["PROMINADO_BOOTSTRAP_QC_ADMIN"] = "Админка Битрикса";
+$MESS["PROMINADO_BOOTSTRAP_QC_SECURITY"] = "Безопасность";
+$MESS["PROMINADO_BOOTSTRAP_QC_PERFORMANCE"] = "Производительность";
+$MESS["PROMINADO_BOOTSTRAP_QC_FINAL"] = "Финальные штрихи";
 
 $MESS["PROMINADO_BOOTSTRAP_QC_DEV_NAME"] = "Ссылки на Dev-сервер";
 $MESS["PROMINADO_BOOTSTRAP_QC_DEV_DESCRIPTION"] = "Проверить, нет ли на сайте ссылок на dev‐сервер";
@@ -64,7 +64,7 @@ $MESS["PROMINADO_BOOTSTRAP_QC_CHPU_NAME"] = "Проверка ЧПУ";
 $MESS["PROMINADO_BOOTSTRAP_QC_CHPU_DESCRIPTION"] = "Проверить везде ЧПУ";
 $MESS["PROMINADO_BOOTSTRAP_QC_CHPU_HOWTO"] = "Описание как проверять";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_SCHEMA_NAME"] = "SCHEMA.ORG";
+$MESS["PROMINADO_BOOTSTRAP_QC_SCHEMA_NAME"] = "shema.org";
 $MESS["PROMINADO_BOOTSTRAP_QC_SCHEMA_DESCRIPTION"] = "Проверка schema.org";
 $MESS["PROMINADO_BOOTSTRAP_QC_SCHEMA_HOWTO"] = "Описание как проверять";
 
@@ -111,10 +111,6 @@ $MESS["PROMINADO_BOOTSTRAP_QC_SITEMAP_HOWTO"] = "Описание как про�
 $MESS["PROMINADO_BOOTSTRAP_QC_DEVELOPER_NAME"] = "Информация о разработчике";
 $MESS["PROMINADO_BOOTSTRAP_QC_DEVELOPER_DESCRIPTION"] = "Добавить информацию о разработчике";
 $MESS["PROMINADO_BOOTSTRAP_QC_DEVELOPER_HOWTO"] = "Описание как проверять";
-
-$MESS["PROMINADO_BOOTSTRAP_QC_BACKUPS_NAME"] = "Резервное копирование";
-$MESS["PROMINADO_BOOTSTRAP_QC_BACKUPS_DESCRIPTION"] = "Настроить автоматические бэкапы";
-$MESS["PROMINADO_BOOTSTRAP_QC_BACKUPS_HOWTO"] = "Описание как проверять";
 
 $MESS["PROMINADO_BOOTSTRAP_QC_ACCESS_NAME"] = "Проверка прав доступа";
 $MESS["PROMINADO_BOOTSTRAP_QC_ACCESS_DESCRIPTION"] = "Проверить нет ли у посетителя доступа к служебным / закрытым разделам сайта";
