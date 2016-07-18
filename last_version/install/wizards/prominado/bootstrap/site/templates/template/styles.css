@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     font-size: 14px;
     line-height: 1.5em;
+    font-family: "Arial", sans-serif;
 }
 p {
     margin: 1em 0;
@@ -16,10 +17,9 @@ img.imgright {
     margin: 0 0 22px 22px;
 }
 h1 {
-    font-size: 48px;
-    line-height: 57px;
-    margin: 70px 0 40px 0;
-    font-weight: 900;
+    font-size: 30px;
+    line-height: 1.1em;
+    margin: 40px 0 20px 0;
 }
 h2 {
     font-size: 26px;
@@ -41,4 +41,24 @@ ul, ol {
 }
 li {
     margin: 0 0 0.5em 0;
+}
+table.table {
+    border-collapse: collapse;
+}
+table.table th {
+    background: #D8D8D8;
+    text-align: left;
+}
+table.table td, table.table th {
+    padding: 20px;
+    border: solid 5px #fff;
+}
+table.table tr:nth-child(odd) td {
+    background: #F2F2F2;
+}
+hr {
+    height: 1px;
+    border: none;
+    margin: 1em 0;
+    background: #D8D8D8;
 }

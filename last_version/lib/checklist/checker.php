@@ -6,8 +6,10 @@ use \Bitrix\Main\Config\Option;
 use \Bitrix\Main\UserTable;
 use \Bitrix\Main\IO;
 use \Bitrix\Main\Application;
+use \Bitrix\Main\Localization\Loc;
 
-// TODO: В ланг файлы
+Loc::loadMessages(__FILE__);
+
 class Checker
 {
     function checkSiteEmail()
@@ -18,7 +20,7 @@ class Checker
             return array(
                 "STATUS" => true,
                 "MESSAGE" => array(
-                    "PREVIEW" => "В настройках главного модуля указана электронная почта " . $email,
+                    "PREVIEW" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_IS_EMAIL") . " " .  $email,
                 ),
             );
         }
@@ -27,8 +29,8 @@ class Checker
             return array(
                 "STATUS" => false,
                 "MESSAGE" => array(
-                    "PREVIEW" => "Электронная почта не указана",
-                    "DETAIL" => "Адрес электронной почты в настройках главного модуля не указан",
+                    "PREVIEW" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_NO_EMAIL"),
+                    "DETAIL" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_NO_EMAIL_DESC"),
                 ),
             );
         }
@@ -46,8 +48,8 @@ class Checker
                 return array(
                     "STATUS" => false,
                     "MESSAGE" => array(
-                        "PREVIEW" => "Найден администратор с логином \"admin\"",
-                        "DETAIL" => "Переименуйте пользователя \"admin\" (ID=" . $user["ID"] . ")",
+                        "PREVIEW" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_IS_ADMIN"),
+                        "DETAIL" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_ADMIN_RENAME") . " (ID=" . $user["ID"] . ")",
                     ),
                 );
             }
@@ -56,7 +58,7 @@ class Checker
         return array(
             "STATUS" => true,
             "MESSAGE" => array(
-                "PREVIEW" => "Отлично! Администратора с логином \"admin\" не найдено",
+                "PREVIEW" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_NO_ADMIN"),
             ),
         );
     }
@@ -81,7 +83,7 @@ class Checker
             return array(
                 "STATUS" => true,
                 "MESSAGE" => array(
-                    "PREVIEW" => "Информация о разработчике указана в " . implode(", ", $find),
+                    "PREVIEW" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_DEV_IS") . implode(", ", $find),
                 ),
             );
         }
@@ -90,8 +92,8 @@ class Checker
             return array(
                 "STATUS" => false,
                 "MESSAGE" => array(
-                    "PREVIEW" => "Информация о разработчике не указана",
-                    "DETAIL" => "Файл this_site_support.php отсутствует в папках /bitrix/php_interface/ и /local/php_interface/",
+                    "PREVIEW" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_DEV_NO"),
+                    "DETAIL" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_DEV_NO_DESC"),
                 ),
             );
         }
@@ -105,7 +107,7 @@ class Checker
             return array(
                 "STATUS" => true,
                 "MESSAGE" => array(
-                    "PREVIEW" => "Favicon найдена",
+                    "PREVIEW" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_FAV_IS"),
                 ),
             );
         }
@@ -114,8 +116,8 @@ class Checker
             return array(
                 "STATUS" => false,
                 "MESSAGE" => array(
-                    "PREVIEW" => "Favicon не найдена",
-                    "DETAIL" => "Favicon не найдена в корне сайта",
+                    "PREVIEW" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_FAV_NO"),
+                    "DETAIL" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_FAV_NO_DESC"),
                 ),
             );
         }
@@ -129,7 +131,7 @@ class Checker
             return array(
                 "STATUS" => true,
                 "MESSAGE" => array(
-                    "PREVIEW" => "robots.txt создан",
+                    "PREVIEW" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_ROB_IS"),
                 ),
             );
         }
@@ -138,7 +140,7 @@ class Checker
             return array(
                 "STATUS" => false,
                 "MESSAGE" => array(
-                    "PREVIEW" => "robots.txt отсутсвует",
+                    "PREVIEW" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_ROB_NO"),
                 ),
             );
         }
@@ -152,7 +154,7 @@ class Checker
             return array(
                 "STATUS" => true,
                 "MESSAGE" => array(
-                    "PREVIEW" => "Старница 404 ошибки создана"
+                    "PREVIEW" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_404_IS")
                 ),
             );
         }
@@ -161,7 +163,7 @@ class Checker
             return array(
                 "STATUS" => false,
                 "MESSAGE" => array(
-                    "PREVIEW" => "Страница 404 ошибки не найдена"
+                    "PREVIEW" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_404_NO")
                 ),
             );
         }
@@ -175,7 +177,7 @@ class Checker
             return array(
                 "STATUS" => true,
                 "MESSAGE" => array(
-                    "PREVIEW" => "humans.txt создан"
+                    "PREVIEW" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_HUMANS_IS")
                 ),
             );
         }
@@ -184,7 +186,7 @@ class Checker
             return array(
                 "STATUS" => false,
                 "MESSAGE" => array(
-                    "PREVIEW" => "humans.txt не найден"
+                    "PREVIEW" => Loc::getMessage("PROMINADO_BOOTSTRAP_CHECKER_HUMANS_NO")
                 ),
             );
         }
