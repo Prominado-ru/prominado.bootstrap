@@ -1,185 +1,185 @@
 <?php
 
-$MESS["PROMINADO_BOOTSTRAP_QC_CONTENT"] = "ÐšÐ¾Ð½Ñ‚ÐµÐ½Ñ‚";
-$MESS["PROMINADO_BOOTSTRAP_QC_VALID"] = "Ð¡Ñ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ñ‹ Ð¸ Ð²Ð°Ð»Ð¸Ð´Ð°Ñ†Ð¸Ñ";
-$MESS["PROMINADO_BOOTSTRAP_QC_TEST"] = "Ð¢ÐµÑÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¾Ð½Ð°Ð»Ð°";
-$MESS["PROMINADO_BOOTSTRAP_QC_ADMIN"] = "ÐÐ´Ð¼Ð¸Ð½ÐºÐ° Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑÐ°";
-$MESS["PROMINADO_BOOTSTRAP_QC_SECURITY"] = "Ð‘ÐµÐ·Ð¾Ð¿Ð°ÑÐ½Ð¾ÑÑ‚ÑŒ";
-$MESS["PROMINADO_BOOTSTRAP_QC_PERFORMANCE"] = "ÐŸÑ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚ÑŒ";
-$MESS["PROMINADO_BOOTSTRAP_QC_FINAL"] = "Ð¤Ð¸Ð½Ð°Ð»ÑŒÐ½Ñ‹Ðµ ÑˆÑ‚Ñ€Ð¸Ñ…Ð¸";
+$MESS["PROMINADO_BOOTSTRAP_QC_CONTENT"] = "Êîíòåíò";
+$MESS["PROMINADO_BOOTSTRAP_QC_VALID"] = "Ñòàíäàðòû è âàëèäàöèÿ";
+$MESS["PROMINADO_BOOTSTRAP_QC_TEST"] = "Òåñòèðîâàíèå ôóíêöèîíàëà";
+$MESS["PROMINADO_BOOTSTRAP_QC_ADMIN"] = "Àäìèíêà Áèòðèêñà";
+$MESS["PROMINADO_BOOTSTRAP_QC_SECURITY"] = "Áåçîïàñíîñòü";
+$MESS["PROMINADO_BOOTSTRAP_QC_PERFORMANCE"] = "Ïðîèçâîäèòåëüíîñòü";
+$MESS["PROMINADO_BOOTSTRAP_QC_FINAL"] = "Ôèíàëüíûå øòðèõè";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_DEV_NAME"] = "Ð¡ÑÑ‹Ð»ÐºÐ¸ Ð½Ð° Dev-ÑÐµÑ€Ð²ÐµÑ€";
-$MESS["PROMINADO_BOOTSTRAP_QC_DEV_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ, Ð½ÐµÑ‚ Ð»Ð¸ Ð½Ð° ÑÐ°Ð¹Ñ‚Ðµ ÑÑÑ‹Ð»Ð¾Ðº Ð½Ð° devâ€ÑÐµÑ€Ð²ÐµÑ€";
-$MESS["PROMINADO_BOOTSTRAP_QC_DEV_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_DEV_NAME"] = "Ññûëêè íà Dev-ñåðâåð";
+$MESS["PROMINADO_BOOTSTRAP_QC_DEV_DESCRIPTION"] = "Ïðîâåðèòü, íåò ëè íà ñàéòå ññûëîê íà dev?ñåðâåð";
+$MESS["PROMINADO_BOOTSTRAP_QC_DEV_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_TEST_NAME"] = "Ð¢ÐµÑÑ‚Ð¾Ð²Ñ‹Ð¹ ÐºÐ¾Ð½Ñ‚ÐµÐ½Ñ‚";
-$MESS["PROMINADO_BOOTSTRAP_QC_TEST_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ, Ð½Ðµ Ð¾ÑÑ‚Ð°Ð»Ð¾ÑÑŒ Ð»Ð¸ Ð½Ð° ÑÐ°Ð¹Ñ‚Ðµ Ñ‚ÐµÑÑ‚Ð¾Ð²Ð¾Ð³Ð¾ ÐºÐ¾Ð½Ñ‚ÐµÐ½Ñ‚Ð°";
-$MESS["PROMINADO_BOOTSTRAP_QC_TEST_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_TEST_NAME"] = "Òåñòîâûé êîíòåíò";
+$MESS["PROMINADO_BOOTSTRAP_QC_TEST_DESCRIPTION"] = "Ïðîâåðèòü, íå îñòàëîñü ëè íà ñàéòå òåñòîâîãî êîíòåíòà";
+$MESS["PROMINADO_BOOTSTRAP_QC_TEST_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_PRINT_NAME"] = "ÐŸÐµÑ‡Ð°Ñ‚ÑŒ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹";
-$MESS["PROMINADO_BOOTSTRAP_QC_PRINT_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ Ð¿ÐµÑ‡Ð°Ñ‚Ð½Ñ‹Ðµ Ð²ÐµÑ€ÑÐ¸Ð¸ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†";
-$MESS["PROMINADO_BOOTSTRAP_QC_PRINT_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_PRINT_NAME"] = "Ïå÷àòü ñòðàíèöû";
+$MESS["PROMINADO_BOOTSTRAP_QC_PRINT_DESCRIPTION"] = "Ïðîâåðèòü ïå÷àòíûå âåðñèè ñòðàíèö";
+$MESS["PROMINADO_BOOTSTRAP_QC_PRINT_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_HTML_NAME"] = "Ð’Ð°Ð»Ð¸Ð´Ð°Ñ†Ð¸Ñ HTML";
-$MESS["PROMINADO_BOOTSTRAP_QC_HTML_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð²Ð°Ð»Ð¸Ð´Ð½Ð¾ÑÑ‚Ð¸ HTML ÐºÐ¾Ð´Ð°";
-$MESS["PROMINADO_BOOTSTRAP_QC_HTML_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_HTML_NAME"] = "Âàëèäàöèÿ HTML";
+$MESS["PROMINADO_BOOTSTRAP_QC_HTML_DESCRIPTION"] = "Ïðîâåðêà âàëèäíîñòè HTML êîäà";
+$MESS["PROMINADO_BOOTSTRAP_QC_HTML_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_CSS_NAME"] = "Ð’Ð°Ð»Ð¸Ð´Ð°Ñ†Ð¸Ñ CSS";
-$MESS["PROMINADO_BOOTSTRAP_QC_CSS_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð²Ð°Ð»Ð¸Ð´Ð½Ð¾ÑÑ‚Ð¸ CSS ÐºÐ¾Ð´Ð°";
-$MESS["PROMINADO_BOOTSTRAP_QC_CSS_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_CSS_NAME"] = "Âàëèäàöèÿ CSS";
+$MESS["PROMINADO_BOOTSTRAP_QC_CSS_DESCRIPTION"] = "Ïðîâåðêà âàëèäíîñòè CSS êîäà";
+$MESS["PROMINADO_BOOTSTRAP_QC_CSS_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_JS_NAME"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° JS";
-$MESS["PROMINADO_BOOTSTRAP_QC_JS_DESCRIPTION"] = "Ð’ ÐºÐ¾Ð½ÑÐ¾Ð»Ð¸ JavaScript Ð½Ðµ Ð²Ñ‹Ð´Ð°ÐµÑ‚ Ð¾ÑˆÐ¸Ð±Ð¾Ðº";
-$MESS["PROMINADO_BOOTSTRAP_QC_JS_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_JS_NAME"] = "Ïðîâåðêà JS";
+$MESS["PROMINADO_BOOTSTRAP_QC_JS_DESCRIPTION"] = "Â êîíñîëè JavaScript íå âûäàåò îøèáîê";
+$MESS["PROMINADO_BOOTSTRAP_QC_JS_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_FORMS_NAME"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ñ„Ð¾Ñ€Ð¼";
-$MESS["PROMINADO_BOOTSTRAP_QC_FORMS_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ Ð²ÑÐµ Ñ„Ð¾Ñ€Ð¼Ñ‹ Ð½Ð° ÑÐ°Ð¹Ñ‚Ðµ";
-$MESS["PROMINADO_BOOTSTRAP_QC_FORMS_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_FORMS_NAME"] = "Ïðîâåðêà ôîðì";
+$MESS["PROMINADO_BOOTSTRAP_QC_FORMS_DESCRIPTION"] = "Ïðîâåðèòü âñå ôîðìû íà ñàéòå";
+$MESS["PROMINADO_BOOTSTRAP_QC_FORMS_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_ADMIN_NAME"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ñ€Ð¾Ð»ÐµÐ¹";
-$MESS["PROMINADO_BOOTSTRAP_QC_ADMIN_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ ÑÐ°Ð¹Ñ‚ Ð¿Ð¾Ð´ Ð°Ð´Ð¼Ð¸Ð½Ð¾Ð¼ Ð¸ Ð² Ð¸Ð½ÐºÐ¾Ð³Ð½Ð¸Ñ‚Ð¾ (ÐµÑÐ»Ð¸ ÐµÑÑ‚ÑŒ Ñ€Ð¾Ð»Ð¸ Ð¿Ð¾Ð¼Ð¸Ð¼Ð¾ Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€/Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ - Ð¿Ñ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ Ð¿Ð¾Ð´ Ð½Ð¸Ð¼Ð¸)";
-$MESS["PROMINADO_BOOTSTRAP_QC_ADMIN_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_ADMIN_NAME"] = "Ïðîâåðêà ðîëåé";
+$MESS["PROMINADO_BOOTSTRAP_QC_ADMIN_DESCRIPTION"] = "Ïðîâåðèòü ñàéò ïîä àäìèíîì è â èíêîãíèòî (åñëè åñòü ðîëè ïîìèìî àäìèíèñòðàòîð/ïîëüçîâàòåëü - ïðîâåðèòü ïîä íèìè)";
+$MESS["PROMINADO_BOOTSTRAP_QC_ADMIN_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_REGISTER_NAME"] = "Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ";
-$MESS["PROMINADO_BOOTSTRAP_QC_REGISTER_DESCRIPTION"] = "ÐŸÐ¾Ð¿Ñ€Ð¾Ð±Ð¾Ð²Ð°Ñ‚ÑŒ Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒÑÑ";
-$MESS["PROMINADO_BOOTSTRAP_QC_REGISTER_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_REGISTER_NAME"] = "Ðåãèñòðàöèÿ";
+$MESS["PROMINADO_BOOTSTRAP_QC_REGISTER_DESCRIPTION"] = "Ïîïðîáîâàòü çàðåãèñòðèðîâàòüñÿ";
+$MESS["PROMINADO_BOOTSTRAP_QC_REGISTER_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_RECOVERY_NAME"] = "Ð’Ð¾ÑÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¿Ð°Ñ€Ð¾Ð»Ñ";
-$MESS["PROMINADO_BOOTSTRAP_QC_RECOVERY_DESCRIPTION"] = "ÐŸÐ¾Ð¿Ñ€Ð¾Ð±Ð¾Ð²Ð°Ñ‚ÑŒ Ð²Ð¾ÑÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ";
-$MESS["PROMINADO_BOOTSTRAP_QC_RECOVERY_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_RECOVERY_NAME"] = "Âîññòàíîâëåíèå ïàðîëÿ";
+$MESS["PROMINADO_BOOTSTRAP_QC_RECOVERY_DESCRIPTION"] = "Ïîïðîáîâàòü âîññòàíîâèòü ïàðîëü";
+$MESS["PROMINADO_BOOTSTRAP_QC_RECOVERY_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_BROWSER_NAME"] = "ÐšÑ€Ð¾ÑÑÐ±Ñ€Ð°ÑƒÐ·ÐµÑ€Ð½Ð¾ÑÑ‚ÑŒ";
-$MESS["PROMINADO_BOOTSTRAP_QC_BROWSER_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ Ñ€Ð°Ð±Ð¾Ñ‚Ñƒ ÑÐ°Ð¹Ñ‚Ð° Ð² Ñ€Ð°Ð·Ð½Ñ‹Ñ… Ð±Ñ€Ð°ÑƒÐ·ÐµÑ€Ð°Ñ…";
-$MESS["PROMINADO_BOOTSTRAP_QC_BROWSER_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_BROWSER_NAME"] = "Êðîññáðàóçåðíîñòü";
+$MESS["PROMINADO_BOOTSTRAP_QC_BROWSER_DESCRIPTION"] = "Ïðîâåðèòü ðàáîòó ñàéòà â ðàçíûõ áðàóçåðàõ";
+$MESS["PROMINADO_BOOTSTRAP_QC_BROWSER_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_MAIL_NAME"] = "ÐŸÐ¾Ñ‡Ñ‚Ð¾Ð²Ñ‹Ðµ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ";
-$MESS["PROMINADO_BOOTSTRAP_QC_MAIL_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ Ð²ÑÐµ Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ñ‹Ðµ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ";
-$MESS["PROMINADO_BOOTSTRAP_QC_MAIL_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_MAIL_NAME"] = "Ïî÷òîâûå óâåäîìëåíèÿ";
+$MESS["PROMINADO_BOOTSTRAP_QC_MAIL_DESCRIPTION"] = "Ïðîâåðèòü âñå ïî÷òîâûå óâåäîìëåíèÿ";
+$MESS["PROMINADO_BOOTSTRAP_QC_MAIL_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_DISABLED_JS_NAME"] = "ÐžÑ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ JavaScript";
-$MESS["PROMINADO_BOOTSTRAP_QC_DISABLED_JS_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ ÑÐ°Ð¹Ñ‚ Ñ Ð²Ñ‹ÐºÐ»ÑŽÑ‡ÐµÐ½Ð½Ñ‹Ð¼ JavaScript";
-$MESS["PROMINADO_BOOTSTRAP_QC_DISABLED_JS_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_DISABLED_JS_NAME"] = "Îòêëþ÷èòü JavaScript";
+$MESS["PROMINADO_BOOTSTRAP_QC_DISABLED_JS_DESCRIPTION"] = "Ïðîâåðèòü ñàéò ñ âûêëþ÷åííûì JavaScript";
+$MESS["PROMINADO_BOOTSTRAP_QC_DISABLED_JS_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_CHPU_NAME"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð§ÐŸÐ£";
-$MESS["PROMINADO_BOOTSTRAP_QC_CHPU_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ Ð²ÐµÐ·Ð´Ðµ Ð§ÐŸÐ£";
-$MESS["PROMINADO_BOOTSTRAP_QC_CHPU_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_CHPU_NAME"] = "Ïðîâåðêà ×ÏÓ";
+$MESS["PROMINADO_BOOTSTRAP_QC_CHPU_DESCRIPTION"] = "Ïðîâåðèòü âåçäå ×ÏÓ";
+$MESS["PROMINADO_BOOTSTRAP_QC_CHPU_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
 $MESS["PROMINADO_BOOTSTRAP_QC_SCHEMA_NAME"] = "shema.org";
-$MESS["PROMINADO_BOOTSTRAP_QC_SCHEMA_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° schema.org";
-$MESS["PROMINADO_BOOTSTRAP_QC_SCHEMA_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_SCHEMA_DESCRIPTION"] = "Ïðîâåðêà schema.org";
+$MESS["PROMINADO_BOOTSTRAP_QC_SCHEMA_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_BROKEN_LINKS_NAME"] = "Ð‘Ð¸Ñ‚Ñ‹Ðµ ÑÑÑ‹Ð»ÐºÐ¸";
-$MESS["PROMINADO_BOOTSTRAP_QC_BROKEN_LINKS_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð±Ð¸Ñ‚Ñ‹Ñ… ÑÑÑ‹Ð»Ð¾Ðº";
-$MESS["PROMINADO_BOOTSTRAP_QC_BROKEN_LINKS_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_BROKEN_LINKS_NAME"] = "Áèòûå ññûëêè";
+$MESS["PROMINADO_BOOTSTRAP_QC_BROKEN_LINKS_DESCRIPTION"] = "Ïðîâåðêà áèòûõ ññûëîê";
+$MESS["PROMINADO_BOOTSTRAP_QC_BROKEN_LINKS_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_TEMPLATE_NAME_NAME"] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ñ ÑˆÐ°Ð±Ð»Ð¾Ð½Ð¾Ð²";
-$MESS["PROMINADO_BOOTSTRAP_QC_TEMPLATE_NAME_DESCRIPTION"] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ñ ÑˆÐ°Ð±Ð»Ð¾Ð½Ð¾Ð²";
-$MESS["PROMINADO_BOOTSTRAP_QC_TEMPLATE_NAME_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_TEMPLATE_NAME_NAME"] = "Íàçâàíèÿ øàáëîíîâ";
+$MESS["PROMINADO_BOOTSTRAP_QC_TEMPLATE_NAME_DESCRIPTION"] = "Íàçâàíèÿ øàáëîíîâ";
+$MESS["PROMINADO_BOOTSTRAP_QC_TEMPLATE_NAME_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_SITE_NAME_NAME"] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ñ ÑÐ°Ð¹Ñ‚Ð¾Ð²";
-$MESS["PROMINADO_BOOTSTRAP_QC_SITE_NAME_DESCRIPTION"] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ñ ÑÐ°Ð¹Ñ‚Ð¾Ð²";
-$MESS["PROMINADO_BOOTSTRAP_QC_SITE_NAME_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_SITE_NAME_NAME"] = "Íàçâàíèÿ ñàéòîâ";
+$MESS["PROMINADO_BOOTSTRAP_QC_SITE_NAME_DESCRIPTION"] = "Íàçâàíèÿ ñàéòîâ";
+$MESS["PROMINADO_BOOTSTRAP_QC_SITE_NAME_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_SITE_EMAIL_NAME"] = "Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð½Ð°Ñ Ð¿Ð¾Ñ‡Ñ‚Ð°";
-$MESS["PROMINADO_BOOTSTRAP_QC_SITE_EMAIL_DESCRIPTION"] = "Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð½Ð°Ñ Ð¿Ð¾Ñ‡Ñ‚Ð° Ð² Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ°Ñ… ÑÐ°Ð¹Ñ‚Ð°";
-$MESS["PROMINADO_BOOTSTRAP_QC_SITE_EMAIL_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_SITE_EMAIL_NAME"] = "Ýëåêòðîííàÿ ïî÷òà";
+$MESS["PROMINADO_BOOTSTRAP_QC_SITE_EMAIL_DESCRIPTION"] = "Ýëåêòðîííàÿ ïî÷òà â íàñòðîéêàõ ñàéòà";
+$MESS["PROMINADO_BOOTSTRAP_QC_SITE_EMAIL_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_USER_ADMIN_NAME"] = "ÐÐ´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€Ñ‹ ÑÐ°Ð¹Ñ‚Ð°";
-$MESS["PROMINADO_BOOTSTRAP_QC_USER_ADMIN_DESCRIPTION"] = "ÐÐ¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð»Ð¾Ð³Ð¸Ð½ Ð¸ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ";
-$MESS["PROMINADO_BOOTSTRAP_QC_USER_ADMIN_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_USER_ADMIN_NAME"] = "Àäìèíèñòðàòîðû ñàéòà";
+$MESS["PROMINADO_BOOTSTRAP_QC_USER_ADMIN_DESCRIPTION"] = "Íîðìàëüíûé ëîãèí è íîðìàëüíûé ïàðîëü";
+$MESS["PROMINADO_BOOTSTRAP_QC_USER_ADMIN_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_IBLOCKS_NAME"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð° Ñƒ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¾Ð²";
-$MESS["PROMINADO_BOOTSTRAP_QC_IBLOCKS_DESCRIPTION"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð° Ñƒ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¾Ð²";
-$MESS["PROMINADO_BOOTSTRAP_QC_IBLOCKS_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_IBLOCKS_NAME"] = "Íàñòðîéêè äîñòóïà ó èíôîáëîêîâ";
+$MESS["PROMINADO_BOOTSTRAP_QC_IBLOCKS_DESCRIPTION"] = "Íàñòðîéêè äîñòóïà ó èíôîáëîêîâ";
+$MESS["PROMINADO_BOOTSTRAP_QC_IBLOCKS_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_IBLOCKS_PATH_NAME"] = "Ð¨Ð°Ð±Ð»Ð¾Ð½Ñ‹ Ð¿ÑƒÑ‚ÐµÐ¹ Ñƒ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¾Ð²";
-$MESS["PROMINADO_BOOTSTRAP_QC_IBLOCKS_PATH_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ ÑˆÐ°Ð±Ð»Ð¾Ð½Ñ‹ Ð¿ÑƒÑ‚ÐµÐ¹ Ð´Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¾Ð² Ð² Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ°Ñ… Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¾Ð²";
-$MESS["PROMINADO_BOOTSTRAP_QC_IBLOCKS_PATH_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_IBLOCKS_PATH_NAME"] = "Øàáëîíû ïóòåé ó èíôîáëîêîâ";
+$MESS["PROMINADO_BOOTSTRAP_QC_IBLOCKS_PATH_DESCRIPTION"] = "Ïðîâåðèòü øàáëîíû ïóòåé äî ýëåìåíòîâ èíôîáëîêîâ â íàñòðîéêàõ èíôîáëîêîâ";
+$MESS["PROMINADO_BOOTSTRAP_QC_IBLOCKS_PATH_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_INDEX_NAME"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¸Ð½Ð´ÐµÐºÑÐ°Ñ†Ð¸Ð¸";
-$MESS["PROMINADO_BOOTSTRAP_QC_INDEX_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ Ð³Ð°Ð»Ð¾Ñ‡ÐºÐ¸ \"Ð˜Ð½Ð´ÐµÐºÑÐ¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹\" Ð¸ \"Ð˜Ð½Ð´ÐµÐºÑÐ¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ñ€Ð°Ð·Ð´ÐµÐ»Ñ‹\" Ð² Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ°Ñ… Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¾Ð²";
-$MESS["PROMINADO_BOOTSTRAP_QC_INDEX_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_INDEX_NAME"] = "Íàñòðîéêè èíäåêñàöèè";
+$MESS["PROMINADO_BOOTSTRAP_QC_INDEX_DESCRIPTION"] = "Ïðîâåðèòü ãàëî÷êè \"Èíäåêñèðîâàòü ýëåìåíòû\" è \"Èíäåêñèðîâàòü ðàçäåëû\" â íàñòðîéêàõ èíôîáëîêîâ";
+$MESS["PROMINADO_BOOTSTRAP_QC_INDEX_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_SEARCH_EXCEPTION_NAME"] = "Ð˜ÑÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Ð¿Ð¾Ð¸ÑÐºÐ°";
-$MESS["PROMINADO_BOOTSTRAP_QC_SEARCH_EXCEPTION_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ Ð²ÑÐµ Ð»Ð¸ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¾ Ð² Ð¸ÑÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Ð¿Ð¾Ð¸ÑÐºÐ° /bitrix/admin/settings.php?mid=search";
-$MESS["PROMINADO_BOOTSTRAP_QC_SEARCH_EXCEPTION_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_SEARCH_EXCEPTION_NAME"] = "Èñêëþ÷åíèÿ ïîèñêà";
+$MESS["PROMINADO_BOOTSTRAP_QC_SEARCH_EXCEPTION_DESCRIPTION"] = "Ïðîâåðèòü âñå ëè äîáàâëåíî â èñêëþ÷åíèÿ ïîèñêà /bitrix/admin/settings.php?mid=search";
+$MESS["PROMINADO_BOOTSTRAP_QC_SEARCH_EXCEPTION_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_SITEMAP_NAME"] = "ÐšÐ°Ñ€Ñ‚Ð° ÑÐ°Ð¹Ñ‚Ð°";
-$MESS["PROMINADO_BOOTSTRAP_QC_SITEMAP_DESCRIPTION"] = "Ð¡Ð³ÐµÐ½ÐµÑ€Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÐºÐ°Ñ€Ñ‚Ñƒ ÑÐ°Ð¹Ñ‚Ð°";
-$MESS["PROMINADO_BOOTSTRAP_QC_SITEMAP_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_SITEMAP_NAME"] = "Êàðòà ñàéòà";
+$MESS["PROMINADO_BOOTSTRAP_QC_SITEMAP_DESCRIPTION"] = "Ñãåíåðèðîâàòü êàðòó ñàéòà";
+$MESS["PROMINADO_BOOTSTRAP_QC_SITEMAP_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_DEVELOPER_NAME"] = "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐµ";
-$MESS["PROMINADO_BOOTSTRAP_QC_DEVELOPER_DESCRIPTION"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÑŽ Ð¾ Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐµ";
-$MESS["PROMINADO_BOOTSTRAP_QC_DEVELOPER_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_DEVELOPER_NAME"] = "Èíôîðìàöèÿ î ðàçðàáîò÷èêå";
+$MESS["PROMINADO_BOOTSTRAP_QC_DEVELOPER_DESCRIPTION"] = "Äîáàâèòü èíôîðìàöèþ î ðàçðàáîò÷èêå";
+$MESS["PROMINADO_BOOTSTRAP_QC_DEVELOPER_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_ACCESS_NAME"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð¿Ñ€Ð°Ð² Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð°";
-$MESS["PROMINADO_BOOTSTRAP_QC_ACCESS_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ Ð½ÐµÑ‚ Ð»Ð¸ Ñƒ Ð¿Ð¾ÑÐµÑ‚Ð¸Ñ‚ÐµÐ»Ñ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð° Ðº ÑÐ»ÑƒÐ¶ÐµÐ±Ð½Ñ‹Ð¼ / Ð·Ð°ÐºÑ€Ñ‹Ñ‚Ñ‹Ð¼ Ñ€Ð°Ð·Ð´ÐµÐ»Ð°Ð¼ ÑÐ°Ð¹Ñ‚Ð°";
-$MESS["PROMINADO_BOOTSTRAP_QC_ACCESS_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_ACCESS_NAME"] = "Ïðîâåðêà ïðàâ äîñòóïà";
+$MESS["PROMINADO_BOOTSTRAP_QC_ACCESS_DESCRIPTION"] = "Ïðîâåðèòü íåò ëè ó ïîñåòèòåëÿ äîñòóïà ê ñëóæåáíûì / çàêðûòûì ðàçäåëàì ñàéòà";
+$MESS["PROMINADO_BOOTSTRAP_QC_ACCESS_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_DISK_QUOTA_NAME"] = "Ð”Ð¸ÑÐºÐ¾Ð²Ð¾Ðµ Ð¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÑÑ‚Ð²Ð¾";
-$MESS["PROMINADO_BOOTSTRAP_QC_DISK_QUOTA_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð´Ð¸ÑÐºÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÑÑ‚Ð²Ð° Ð¸ Ð½Ð° ÑÐºÐ¾Ð»ÑŒÐºÐ¾ ÐµÐ³Ð¾ Ñ…Ð²Ð°Ñ‚Ð¸Ñ‚";
-$MESS["PROMINADO_BOOTSTRAP_QC_DISK_QUOTA_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_DISK_QUOTA_NAME"] = "Äèñêîâîå ïðîñòðàíñòâî";
+$MESS["PROMINADO_BOOTSTRAP_QC_DISK_QUOTA_DESCRIPTION"] = "Ïðîâåðèòü êîëè÷åñòâî äèñêîâîãî ïðîñòðàíñòâà è íà ñêîëüêî åãî õâàòèò";
+$MESS["PROMINADO_BOOTSTRAP_QC_DISK_QUOTA_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
 $MESS["PROMINADO_BOOTSTRAP_QC_CRON_NAME"] = "Cron";
-$MESS["PROMINADO_BOOTSTRAP_QC_CRON_DESCRIPTION"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¸Ñ‚ÑŒ Ð·Ð°Ð¿ÑƒÑÐºÐ¸ Ñ€ÐµÐ³ÑƒÐ»ÑÑ€Ð½Ñ‹Ñ… ÑÐºÑ€Ð¸Ð¿Ñ‚Ð¾Ð² Ð¿Ð¾ ÐºÑ€Ð¾Ð½Ñƒ";
-$MESS["PROMINADO_BOOTSTRAP_QC_CRON_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_CRON_DESCRIPTION"] = "Íàñòðîèòü çàïóñêè ðåãóëÿðíûõ ñêðèïòîâ ïî êðîíó";
+$MESS["PROMINADO_BOOTSTRAP_QC_CRON_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_CRASH_NAME"] = "Ð Ð°Ð±Ð¾Ñ‚Ð¾ÑÐ¿Ð¾ÑÐ¾Ð±Ð½Ð¾ÑÑ‚ÑŒ ÑÐ°Ð¹Ñ‚Ð°";
-$MESS["PROMINADO_BOOTSTRAP_QC_CRASH_DESCRIPTION"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¸Ñ‚ÑŒ email / sms ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ Ð¾ Ð½ÐµÑ€Ð°Ð±Ð¾Ñ‚Ð¾ÑÐ¿Ð¾ÑÐ¾Ð±Ð½Ð¾ÑÑ‚Ð¸ ÑÐ°Ð¹Ñ‚Ð°";
-$MESS["PROMINADO_BOOTSTRAP_QC_CRASH_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_CRASH_NAME"] = "Ðàáîòîñïîñîáíîñòü ñàéòà";
+$MESS["PROMINADO_BOOTSTRAP_QC_CRASH_DESCRIPTION"] = "Íàñòðîèòü email / sms óâåäîìëåíèÿ î íåðàáîòîñïîñîáíîñòè ñàéòà";
+$MESS["PROMINADO_BOOTSTRAP_QC_CRASH_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_PICTURES_NAME"] = "ÐžÐ¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð°Ñ†Ð¸Ñ ÐºÐ°Ñ€Ñ‚Ð¸Ð½Ð¾Ðº";
-$MESS["PROMINADO_BOOTSTRAP_QC_PICTURES_DESCRIPTION"] = "ÐžÐ¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸";
-$MESS["PROMINADO_BOOTSTRAP_QC_PICTURES_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_PICTURES_NAME"] = "Îïòèìèçàöèÿ êàðòèíîê";
+$MESS["PROMINADO_BOOTSTRAP_QC_PICTURES_DESCRIPTION"] = "Îïòèìèçèðîâàòü êàðòèíêè";
+$MESS["PROMINADO_BOOTSTRAP_QC_PICTURES_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_CACHE_NAME"] = "ÐšÑÑˆÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ";
-$MESS["PROMINADO_BOOTSTRAP_QC_CACHE_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ ÐºÑÑˆÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ";
-$MESS["PROMINADO_BOOTSTRAP_QC_CACHE_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_CACHE_NAME"] = "Êýøèðîâàíèå";
+$MESS["PROMINADO_BOOTSTRAP_QC_CACHE_DESCRIPTION"] = "Ïðîâåðèòü êýøèðîâàíèå";
+$MESS["PROMINADO_BOOTSTRAP_QC_CACHE_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_SITE_SPEED_NAME"] = "Ð¡ÐºÐ¾Ñ€Ð¾ÑÑ‚ÑŒ ÑÐ°Ð¹Ñ‚Ð°";
-$MESS["PROMINADO_BOOTSTRAP_QC_SITE_SPEED_DESCRIPTION"] = "Ð¡ÐºÐ¾Ñ€Ð¾ÑÑ‚ÑŒ ÑÐ°Ð¹Ñ‚Ð°";
-$MESS["PROMINADO_BOOTSTRAP_QC_SITE_SPEED_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_SITE_SPEED_NAME"] = "Ñêîðîñòü ñàéòà";
+$MESS["PROMINADO_BOOTSTRAP_QC_SITE_SPEED_DESCRIPTION"] = "Ñêîðîñòü ñàéòà";
+$MESS["PROMINADO_BOOTSTRAP_QC_SITE_SPEED_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
 $MESS["PROMINADO_BOOTSTRAP_QC_FAVICON_NAME"] = "Favicon";
 $MESS["PROMINADO_BOOTSTRAP_QC_FAVICON_DESCRIPTION"] = "Favicon";
-$MESS["PROMINADO_BOOTSTRAP_QC_FAVICON_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_FAVICON_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
 $MESS["PROMINADO_BOOTSTRAP_QC_ROBOTS_TXT_NAME"] = "Robots.txt";
 $MESS["PROMINADO_BOOTSTRAP_QC_ROBOTS_TXT_DESCRIPTION"] = "Robots.txt";
-$MESS["PROMINADO_BOOTSTRAP_QC_ROBOTS_TXT_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_ROBOTS_TXT_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_404_NAME"] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° 404 Ð¾ÑˆÐ¸Ð±ÐºÐ¸";
-$MESS["PROMINADO_BOOTSTRAP_QC_404_DESCRIPTION"] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° 404 Ð¾ÑˆÐ¸Ð±ÐºÐ¸";
-$MESS["PROMINADO_BOOTSTRAP_QC_404_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_404_NAME"] = "Ñòðàíèöà 404 îøèáêè";
+$MESS["PROMINADO_BOOTSTRAP_QC_404_DESCRIPTION"] = "Ñòðàíèöà 404 îøèáêè";
+$MESS["PROMINADO_BOOTSTRAP_QC_404_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_SOCIAL_SHARE_NAME"] = "Ð Ð°ÑÑˆÐ°Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð² ÑÐ¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ñ… ÑÐµÑ‚ÑÑ…";
-$MESS["PROMINADO_BOOTSTRAP_QC_SOCIAL_SHARE_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº, Ñ‚ÐµÐºÑÑ‚, ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÑƒ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ† Ð¿Ñ€Ð¸ Ñ€Ð°ÑÑˆÐ°Ñ€Ð¸Ð²Ð°Ð½Ð¸Ð¸ Ð² ÑÐ¾Ñ†ÑÐµÑ‚ÑÑ…";
-$MESS["PROMINADO_BOOTSTRAP_QC_SOCIAL_SHARE_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_SOCIAL_SHARE_NAME"] = "Ðàñøàðèðîâàíèå â ñîöèàëüíûõ ñåòÿõ";
+$MESS["PROMINADO_BOOTSTRAP_QC_SOCIAL_SHARE_DESCRIPTION"] = "Ïðîâåðèòü çàãîëîâîê, òåêñò, êàðòèíêó ñòðàíèö ïðè ðàñøàðèâàíèè â ñîöñåòÿõ";
+$MESS["PROMINADO_BOOTSTRAP_QC_SOCIAL_SHARE_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_MOBILE_ICONS_NAME"] = "Ð˜ÐºÐ¾Ð½ÐºÐ¸ Ð½Ð° Ð¼Ð¾Ð±Ð¸Ð»ÑŒÐ½Ñ‹Ñ… ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð°Ñ…";
-$MESS["PROMINADO_BOOTSTRAP_QC_MOBILE_ICONS_DESCRIPTION"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ Ð¸ÐºÐ¾Ð½ÐºÐ¸ Ð¿Ñ€Ð¸ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ð¸ ÑÐ°Ð¹Ñ‚Ð° Ð² Ð¸Ð·Ð±Ñ€Ð°Ð½Ð½Ð¾Ðµ Ð½Ð° Ð¼Ð¾Ð±Ð¸Ð»ÑŒÐ½Ñ‹Ñ… ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð°Ñ…";
-$MESS["PROMINADO_BOOTSTRAP_QC_MOBILE_ICONS_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_MOBILE_ICONS_NAME"] = "Èêîíêè íà ìîáèëüíûõ óñòðîéñòâàõ";
+$MESS["PROMINADO_BOOTSTRAP_QC_MOBILE_ICONS_DESCRIPTION"] = "Ïðîâåðèòü èêîíêè ïðè äîáàâëåíèè ñàéòà â èçáðàííîå íà ìîáèëüíûõ óñòðîéñòâàõ";
+$MESS["PROMINADO_BOOTSTRAP_QC_MOBILE_ICONS_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_MOBILE_VERSION_NAME"] = "ÐœÐ¾Ð±Ð¸Ð»ÑŒÐ½Ð°Ñ Ð²ÐµÑ€ÑÐ¸Ñ";
-$MESS["PROMINADO_BOOTSTRAP_QC_MOBILE_VERSION_DESCRIPTION"] = "ÐœÐ¾Ð±Ð¸Ð»ÑŒÐ½Ð°Ñ Ð²ÐµÑ€ÑÐ¸Ñ";
-$MESS["PROMINADO_BOOTSTRAP_QC_MOBILE_VERSION_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_MOBILE_VERSION_NAME"] = "Ìîáèëüíàÿ âåðñèÿ";
+$MESS["PROMINADO_BOOTSTRAP_QC_MOBILE_VERSION_DESCRIPTION"] = "Ìîáèëüíàÿ âåðñèÿ";
+$MESS["PROMINADO_BOOTSTRAP_QC_MOBILE_VERSION_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_VIEWPORT_NAME"] = "Ð£ÐºÐ°Ð·Ð°Ñ‚ÑŒ Viewport";
-$MESS["PROMINADO_BOOTSTRAP_QC_VIEWPORT_DESCRIPTION"] = "Ð£ÐºÐ°Ð·Ð°Ñ‚ÑŒ Viewport";
-$MESS["PROMINADO_BOOTSTRAP_QC_VIEWPORT_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_VIEWPORT_NAME"] = "Óêàçàòü Viewport";
+$MESS["PROMINADO_BOOTSTRAP_QC_VIEWPORT_DESCRIPTION"] = "Óêàçàòü Viewport";
+$MESS["PROMINADO_BOOTSTRAP_QC_VIEWPORT_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_TITLES_NAME"] = "Ð—Ð°Ð³Ð¾Ð»Ð¾Ð²ÐºÐ¸ Ð¸ ÑÐ²Ð¾Ð¹ÑÑ‚Ð²Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†";
-$MESS["PROMINADO_BOOTSTRAP_QC_TITLES_DESCRIPTION"] = "Ð—Ð°Ð³Ð¾Ð»Ð¾Ð²ÐºÐ¸ Ð¸ ÑÐ²Ð¾Ð¹ÑÑ‚Ð²Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†";
-$MESS["PROMINADO_BOOTSTRAP_QC_TITLES_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_TITLES_NAME"] = "Çàãîëîâêè è ñâîéñòâà ñòðàíèö";
+$MESS["PROMINADO_BOOTSTRAP_QC_TITLES_DESCRIPTION"] = "Çàãîëîâêè è ñâîéñòâà ñòðàíèö";
+$MESS["PROMINADO_BOOTSTRAP_QC_TITLES_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_COUNTERS_NAME"] = "Ð¡Ñ‡ÐµÑ‚Ñ‡Ð¸ÐºÐ¸";
-$MESS["PROMINADO_BOOTSTRAP_QC_COUNTERS_DESCRIPTION"] = "Ð¡Ñ‡ÐµÑ‚Ñ‡Ð¸ÐºÐ¸";
-$MESS["PROMINADO_BOOTSTRAP_QC_COUNTERS_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_COUNTERS_NAME"] = "Ñ÷åò÷èêè";
+$MESS["PROMINADO_BOOTSTRAP_QC_COUNTERS_DESCRIPTION"] = "Ñ÷åò÷èêè";
+$MESS["PROMINADO_BOOTSTRAP_QC_COUNTERS_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
-$MESS["PROMINADO_BOOTSTRAP_QC_REDIRECT_NAME"] = "Ð ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚";
-$MESS["PROMINADO_BOOTSTRAP_QC_REDIRECT_DESCRIPTION"] = "Ð ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚ www-nowww/nowww-www";
-$MESS["PROMINADO_BOOTSTRAP_QC_REDIRECT_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_REDIRECT_NAME"] = "Ðåäèðåêò";
+$MESS["PROMINADO_BOOTSTRAP_QC_REDIRECT_DESCRIPTION"] = "Ðåäèðåêò www-nowww/nowww-www";
+$MESS["PROMINADO_BOOTSTRAP_QC_REDIRECT_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";
 
 $MESS["PROMINADO_BOOTSTRAP_QC_HUMANS_NAME"] = "Humans.txt";
 $MESS["PROMINADO_BOOTSTRAP_QC_HUMANS_DESCRIPTION"] = "Humans.txt";
-$MESS["PROMINADO_BOOTSTRAP_QC_HUMANS_HOWTO"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑ‚ÑŒ";
+$MESS["PROMINADO_BOOTSTRAP_QC_HUMANS_HOWTO"] = "Îïèñàíèå êàê ïðîâåðÿòü";

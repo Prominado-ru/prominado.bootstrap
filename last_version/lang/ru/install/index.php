@@ -1,10 +1,8 @@
 <?php
 
 $MESS["PROMINADO_BOOTSTRAP_INSTALL_NAME"] = "Prominado Bootstrap";
-$MESS["PROMINADO_BOOTSTRAP_INSTALL_DESCRIPTION"] = "РњР°СЃС‚РµСЂ СЃРѕР·РґР°РЅРёСЏ РїСѓСЃС‚РѕРіРѕ СЃР°Р№С‚Р° СЃ РїРѕР»РµР·РЅРѕСЃС‚СЏРјРё";
+$MESS["PROMINADO_BOOTSTRAP_INSTALL_DESCRIPTION"] = "Мастер создания пустого сайта с полезностями";
 $MESS["PROMINADO_BOOTSTRAP_PARTNER"] = "Prominado";
 $MESS["PROMINADO_BOOTSTRAP_PARTNER_URI"] = "http://prominado.ru";
-$MESS["PROMINADO_BOOTSTRAP_INSTALL_TITLE"] = "РњРѕРґСѓР»СЊ Prominado Bootstrap СѓСЃС‚Р°РЅРѕРІР»РµРЅ";
-$MESS["PROMINADO_BOOTSTRAP_UNINSTALL_TITLE"] = "РњРѕРґСѓР»СЊ Prominado Bootstrap СѓРґР°Р»РµРЅ";
-
-
+$MESS["PROMINADO_BOOTSTRAP_INSTALL_TITLE"] = "Модуль Prominado Bootstrap установлен";
+$MESS["PROMINADO_BOOTSTRAP_UNINSTALL_TITLE"] = "Модуль Prominado Bootstrap удален";

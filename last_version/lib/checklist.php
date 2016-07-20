@@ -8,7 +8,7 @@ Loc::loadMessages(__FILE__);
 
 class CheckList
 {
-    static public function onCheckListGet($arCheckList)
+    static public function onCheckListGet()
     {
         $checkList = array("CATEGORIES" => Array(), "POINTS" => Array());
         $checkList["CATEGORIES"]["PROMINADO"] = Array(
@@ -226,8 +226,6 @@ class CheckList
             "DESC" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_SEARCH_EXCEPTION_DESCRIPTION"),
             "HOWTO" => Loc::getMessage("PROMINADO_BOOTSTRAP_QC_SEARCH_EXCEPTION_HOWTO"),
         );
-
-        // todo :: Автотест создание карты сайта
         $checkList["POINTS"]["PROMINADO_QC_SITEMAP"] = Array(
             "PARENT" => "PROMINADO_ADMIN",
             "REQUIRE" => "Y",
@@ -415,6 +413,4 @@ class CheckList
 
         return $checkList;
     }
-
-
 }

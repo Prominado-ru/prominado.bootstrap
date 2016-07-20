@@ -1,4 +1,4 @@
 <?php
 
-$MESS["PROMINADO_BOOTSTRAP_UNINSTALL_OK"] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Prominado Bootstrap ÑƒÐ´Ð°Ð»ÐµÐ½";
-$MESS["PROMINADO_BOOTSTRAP_MOD_BACK"] = "Ð’ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ð½Ð°Ð·Ð°Ð´";
+$MESS["PROMINADO_BOOTSTRAP_UNINSTALL_OK"] = "Ìîäóëü Prominado Bootstrap óäàëåí";
+$MESS["PROMINADO_BOOTSTRAP_MOD_BACK"] = "Âåðíóòüñÿ íàçàä";

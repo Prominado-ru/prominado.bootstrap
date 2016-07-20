@@ -1,4 +1,4 @@
 <?php
 
-$MESS["PROMINADO_BOOTSTRAP_INSTALL_OK"] = "РњРѕРґСѓР»СЊ Prominado Bootstrap СѓСЃС‚Р°РЅРѕРІР»РµРЅ";
-$MESS["PROMINADO_BOOTSTRAP_MOD_BACK"] = "Р’РµСЂРЅСѓС‚СЊСЃСЏ РЅР°Р·Р°Рґ";
+$MESS["PROMINADO_BOOTSTRAP_INSTALL_OK"] = "Модуль Prominado Bootstrap установлен";
+$MESS["PROMINADO_BOOTSTRAP_MOD_BACK"] = "Вернуться назад";

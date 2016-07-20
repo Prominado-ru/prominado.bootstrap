@@ -4,6 +4,9 @@ if (!defined("WIZARD_SITE_ID") || !defined("WIZARD_SITE_DIR"))return;
 
 use \Bitrix\Main\Application;
 use \Bitrix\Main\IO;
+use \Bitrix\Main\Localization\Loc;
+
+Loc::getMessage(__FILE__);
 
 if(file_exists(WIZARD_ABSOLUTE_PATH . "/site/public/" . LANGUAGE_ID . "/"))
 {
@@ -34,5 +37,5 @@ if($wizard->getVar("showHumansData"))
 if($wizard->getVar("showDeveloperData"))
 {
     $file = Application::getDocumentRoot() . "/local/php_interface/this_site_support.php";
-    IO\File::putFileContents($file, '<a href="' . $wizard->getVar("developer_website") . '" target="_blank">Создание и техническая поддержка сайта – ' . $wizard->getVar("developer_name") . '</a>');
+    IO\File::putFileContents($file, '<a href="' . $wizard->getVar("developer_website") . '" target="_blank">' . Loc::getMessage("PROMINADO_BOOTSTRAP_WIZARD_CREATED_BY") . ' � ' . $wizard->getVar("developer_name") . '</a>');
 }
