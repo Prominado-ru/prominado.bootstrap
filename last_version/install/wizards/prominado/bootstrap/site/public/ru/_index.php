@@ -1,8 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Ãëàâíàÿ ñòðàíèöà");
+$APPLICATION->SetTitle("Ð“Ð»Ð°Ð²Ð½Ð°Ñ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°");
 ?>
 
-Text here...
+    Text here...
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

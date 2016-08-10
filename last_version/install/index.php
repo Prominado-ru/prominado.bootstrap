@@ -40,6 +40,7 @@ class prominado_bootstrap extends CModule
         $eventManager = \Bitrix\Main\EventManager::getInstance();
         $eventManager->registerEventHandler("main", "OnBeforeProlog", $this->MODULE_ID, "\\Prominado\\Bootstrap\\Panel", "showPanel");
         $eventManager->registerEventHandler("main", "OnCheckListGet", $this->MODULE_ID, "\\Prominado\\Bootstrap\\CheckList", "onCheckListGet");
+        $eventManager->registerEventHandler("iblock", "OnIBlockPropertyBuildList", $this->MODULE_ID, "\\Prominado\\Bootstrap\\ListProperty", "GetUserTypeDescription");
         return true;
     }
 
@@ -48,6 +49,7 @@ class prominado_bootstrap extends CModule
         $eventManager = \Bitrix\Main\EventManager::getInstance();
         $eventManager->unRegisterEventHandler("main", "OnBeforeProlog", $this->MODULE_ID, "\\Prominado\\Bootstrap\\Panel", "showPanel");
         $eventManager->unRegisterEventHandler("main", "OnCheckListGet", $this->MODULE_ID, "\\Prominado\\Bootstrap\\CheckList", "onCheckListGet");
+        $eventManager->unRegisterEventHandler("iblock", "OnIBlockPropertyBuildList", $this->MODULE_ID, "\\Prominado\\Bootstrap\\ListProperty", "GetUserTypeDescription");
         ModuleManager::unRegisterModule($this->MODULE_ID);
 
         return true;
