@@ -3,9 +3,9 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/urlrewrite.
 CHTTP::SetStatus("404 Not Found");
 @define("ERROR_404","Y");
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("РЎС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР°");
+$APPLICATION->SetTitle("Страница не найдена");
 ?>
 
-404 РѕС€РёР±РєР°
+404 ошибка
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -37,5 +37,5 @@ if($wizard->getVar("showHumansData"))
 if($wizard->getVar("showDeveloperData"))
 {
     $file = Application::getDocumentRoot() . "/local/php_interface/this_site_support.php";
-    IO\File::putFileContents($file, '<a href="' . $wizard->getVar("developer_website") . '" target="_blank">' . Loc::getMessage("PROMINADO_BOOTSTRAP_WIZARD_CREATED_BY") . ' – ' . $wizard->getVar("developer_name") . '</a>');
+    IO\File::putFileContents($file, '<a href="' . $wizard->getVar("developer_website") . '" target="_blank">' . Loc::getMessage("PROMINADO_BOOTSTRAP_WIZARD_CREATED_BY") . $wizard->getVar("developer_name") . '</a>');
 }
