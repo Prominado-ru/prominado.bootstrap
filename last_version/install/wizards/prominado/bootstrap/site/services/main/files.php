@@ -23,17 +23,6 @@ $wizard =& $this->GetWizard();
 
 WizardServices::PatchHtaccess(WIZARD_SITE_PATH);
 
-if($wizard->getVar("showHumansData"))
-{
-    CWizardUtil::ReplaceMacros(WIZARD_SITE_PATH . "humans.txt", Array(
-        "SENIOR_NAME" => $wizard->getVar("developer_senior"),
-        "DESIGNER_NAME" => $wizard->getVar("developer_designer"),
-        "MANAGER_NAME" => $wizard->getVar("developer_manager"),
-        "DEVELOPER_NAME" => $wizard->getVar("developer_name"),
-        "DEVELOPER_WEBSITE" => $wizard->getVar("developer_website"),
-    ));
-}
-
 if($wizard->getVar("showDeveloperData"))
 {
     $file = Application::getDocumentRoot() . "/local/php_interface/this_site_support.php";

@@ -19,6 +19,8 @@ $arWizardDescription = Array(
     "TEMPLATES" => Array(
         Array("SCRIPT" => "wizard_sol")
     ),
-    "STEPS" => Array("SelectSiteStep", "SiteSettingsStep", "DeveloperStep", "DataInstallStep", "SuccessStep")
+	"STEPS" => (defined("WIZARD_DEFAULT_SITE_ID") ?
+		Array("SiteSettingsStep", "DeveloperStep", "DataInstallStep", "SuccessStep"):
+		Array("SelectSiteStep", "SiteSettingsStep", "DeveloperStep", "DataInstallStep", "SuccessStep"))
 );
 ?>

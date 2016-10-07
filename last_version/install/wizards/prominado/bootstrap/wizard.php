@@ -127,9 +127,6 @@ class DeveloperStep extends CWizardStep
         $styleDeveloper = 'style="display:none"';
         if($wizard->GetVar("showDeveloperData") == "Y")$styleDeveloper = 'style="display:block"';
 
-        $styleHumans = 'style="display:none"';
-        if($wizard->GetVar("showHumansData") == "Y")$styleHumans = 'style="display:block"';
-
         $this->content = '<div class="wizard-input-form">';
 
         $this->content .= '<div class="wizard-input-form-block">
@@ -152,28 +149,8 @@ class DeveloperStep extends CWizardStep
                     ' . $this->ShowInputField("text", "developer_email", array("id" => "developer_email", "class" => "wizard-field")) . '
                 </div>
             </div>';
-
-        $this->content .= '<div class="wizard-input-form-block">
-                ' . $this->ShowCheckboxField("showHumansData", "Y",
-                (array("id" => "show-humans-data", "onClick" => "if(this.checked == true){document.getElementById('prominado_humans').style.display='block';}else{document.getElementById('prominado_humans').style.display='none';}"))) . '
-                <label for="show-humans-data" class="wizard-input-title">' . Loc::getMessage("PROMINADO_BOOTSTRAP_INSTALL_HUMANS_SHOW") . '</label>
-            </div>
-            <div id="prominado_humans" ' . $styleHumans . '>
-                <div class="wizard-catalog-title">' . Loc::getMessage("PROMINADO_BOOTSTRAP_INSTALL_HUMANS") . '</div>
-                <div class="wizard-input-form-block">
-                    <div><label for="siteName" class="wizard-input-title">' . Loc::getMessage("PROMINADO_BOOTSTRAP_INSTALL_HUMANS_MANAGER") . '</label></div>
-                    ' . $this->ShowInputField("text", "developer_manager", array("id" => "developer_manager", "class" => "wizard-field")) . '
-                </div>
-                <div class="wizard-input-form-block">
-                    <div><label for="siteName" class="wizard-input-title">' . Loc::getMessage("PROMINADO_BOOTSTRAP_INSTALL_HUMANS_DESIGNER") . '</label></div>
-                    ' . $this->ShowInputField("text", "developer_designer", array("id" => "developer_designer", "class" => "wizard-field")) . '
-                </div>
-                <div class="wizard-input-form-block">
-                    <div><label for="siteName" class="wizard-input-title">' . Loc::getMessage("PROMINADO_BOOTSTRAP_INSTALL_HUMANS_SENIOR") . '</label></div>
-                    ' . $this->ShowInputField("text", "developer_senior", array("id" => "developer_senior", "class" => "wizard-field")) . '
-                </div>
-            </div>
-        </div>';
+		
+        $this->content .= '</div>';
     }
 
     function OnPostForm()
