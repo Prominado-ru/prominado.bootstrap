@@ -11,14 +11,14 @@
 * @param int $size Размер файла в байтах
 * @return string
 */
-\Prominado\Bootstrap\Functions::getFileSize($size)
+\Prominado\Bootstrap\Helper::getFileSize($size)
 
 /**
 * Генерирует информацию о youtube ролике
 * @param $url string Ссылка на ролик
 * @return array
 */
-\Prominado\Bootstrap\Functions::getYoutube($url)
+\Prominado\Bootstrap\Helper::getYoutube($url)
 
 /**
 * Склонение
@@ -26,25 +26,25 @@
 * @param array $forms Формы (1, 2, 5)
 * @return string Нужная форма слова
 */
-\Prominado\Bootstrap\Functions::declension($n, $forms)
+\Prominado\Bootstrap\Helper::declension($n, $forms)
 
 /**
 * Проверка, вызвана ли страница AJAX'ом
 * @return boolean true если ajax
 */
-\Prominado\Bootstrap\Functions::isAjax()
+\Prominado\Bootstrap\Helper::isAjax()
 
 /**
 * Получение информации о регионе по IP
 * @param string $ip IP адрес
 * @return \SimpleXMLElement[] Массив с информацией о регионе
 */
-\Prominado\Bootstrap\Functions::getIPInfo($ip = '')
+\Prominado\Bootstrap\Helper::getIPInfo($ip = '')
 
 /**
 * Получение координат точки по адресу
 * @param $address string Адрес для которого нужны координаты
 * @return string
 */
-\Prominado\Bootstrap\Functions::getCoordsByAddress($address)
+\Prominado\Bootstrap\Helper::getCoordsByAddress($address)
 ```

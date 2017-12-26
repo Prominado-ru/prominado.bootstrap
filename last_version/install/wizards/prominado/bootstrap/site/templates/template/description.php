@@ -1,7 +1,10 @@
-<?if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)die();
+<?php
 
-$arTemplate = Array(
-    "NAME" => "#TEMPLATE_NAME#",
-    "DESCRIPTION" => "#TEMPLATE_DESCRIPTION#"
-);
-?>
+if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
+    die();
+}
+
+$arTemplate = [
+    'NAME'        => '#TEMPLATE_NAME#',
+    'DESCRIPTION' => '#TEMPLATE_DESCRIPTION#'
+];

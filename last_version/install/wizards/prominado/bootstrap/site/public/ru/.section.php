@@ -1,6 +1,6 @@
-<?
-$sSectionName = "Главная";
-$arDirProperties = array(
-    "robots" => "index, follow"
-);
-?>
+<?php
+
+$sSectionName = 'Главная';
+$arDirProperties = [
+    'robots' => 'index, follow'
+];

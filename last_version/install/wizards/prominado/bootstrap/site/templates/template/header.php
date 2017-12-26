@@ -1,9 +1,14 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<!doctype html>
-<html lang="ru">
+<?php
+
+if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
+    die();
+} ?>
+
+    <!doctype html>
+    <html lang="ru">
     <head>
-        <?$APPLICATION->ShowHead();?>
-        <title><?$APPLICATION->ShowTitle();?></title>
+        <?php $APPLICATION->ShowHead(); ?>
+        <title><?php $APPLICATION->ShowTitle(); ?></title>
     </head>
     <body>
-        <?$APPLICATION->ShowPanel();?>
+<?php $APPLICATION->ShowPanel(); ?>
