@@ -41,7 +41,7 @@ class Checker
             try {
                 $content = explode(PHP_EOL, $file->getContents());
                 foreach ($content as $row) {
-                    if ($row === 'Deny from all') {
+                    if (mb_strtolower($row) === 'deny from all') {
                         return [
                             'STATUS'  => true,
                             'MESSAGE' => [
@@ -59,6 +59,26 @@ class Checker
             'STATUS'  => false,
             'MESSAGE' => [
                 'PREVIEW' => Loc::getMessage('PROMINADO_BOOTSTRAP_CHECKER_GIT_DISALLOW_NO')
+            ],
+        ];
+    }
+
+    public function checkGitignore()
+    {
+        $file = new IO\File(Application::getDocumentRoot() . '/.gitignore');
+        if ($file->isExists()) {
+            return [
+                'STATUS'  => true,
+                'MESSAGE' => [
+                    'PREVIEW' => Loc::getMessage('PROMINADO_BOOTSTRAP_CHECKER_GIT_IGNORE_YES'),
+                ],
+            ];
+        }
+
+        return [
+            'STATUS'  => false,
+            'MESSAGE' => [
+                'PREVIEW' => Loc::getMessage('PROMINADO_BOOTSTRAP_CHECKER_GIT_IGNORE_NO')
             ],
         ];
     }
@@ -178,7 +198,7 @@ class Checker
                 foreach ($content as $row) {
                     $data = array_map('trim', explode(':', $row));
 
-                    if (($data[0] === 'Disallow') && ($data[1] === '/')) {
+                    if ((mb_strtolower($data[0]) === 'disallow') && ($data[1] === '/')) {
                         return [
                             'STATUS'  => false,
                             'MESSAGE' => [

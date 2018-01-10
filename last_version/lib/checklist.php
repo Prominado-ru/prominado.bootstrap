@@ -43,6 +43,17 @@ class CheckList
             'HOWTO'       => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_GIT_DISALLOW_HOWTO'),
         ];
 
+        $checkList['POINTS']['PROMINADO_QC_GIT_IGNORE'] = [
+            'PARENT'      => 'PROMINADO_GIT',
+            'REQUIRE'     => 'Y',
+            'AUTO'        => 'Y',
+            'CLASS_NAME'  => '\\Prominado\\Bootstrap\\Checklist\\Checker',
+            'METHOD_NAME' => 'checkGitignore',
+            'NAME'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_GIT_IGNORE_NAME'),
+            'DESC'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_GIT_IGNORE_DESCRIPTION'),
+            'HOWTO'       => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_GIT_IGNORE_HOWTO'),
+        ];
+
         $checkList['CATEGORIES']['PROMINADO_ADMIN'] = [
             'NAME'   => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_ADMIN'),
             'PARENT' => 'PROMINADO'

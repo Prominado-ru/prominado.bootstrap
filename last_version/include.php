@@ -18,7 +18,16 @@ $jsLibraries = [
         'css' => '/bitrix/js/prominado.bootstrap/owl/assets/owl.carousel.css',
         'js'  => '/bitrix/js/prominado.bootstrap/owl/owl.carousel.min.js',
         'rel' => ['jquery2']
-    ]
+    ],
+    'inputmask' => [
+        'js'  => '/bitrix/js/prominado.bootstrap/inputmask/jquery.maskedinput.min.js',
+        'rel' => ['jquery2']
+    ],
+    'styler' => [
+        'css' => '/bitrix/js/prominado.bootstrap/styler/jquery.formstyler.css',
+        'js'  => '/bitrix/js/prominado.bootstrap/styler/jquery.formstyler.min.js',
+        'rel' => ['jquery2']
+    ],
 ];
 
 foreach ($jsLibraries as $ext => $paths) {

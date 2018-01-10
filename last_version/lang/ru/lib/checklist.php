@@ -12,6 +12,10 @@ $MESS['PROMINADO_BOOTSTRAP_QC_GIT_DISALLOW_NAME'] = 'Закрыть доступ к папке с Gi
 $MESS['PROMINADO_BOOTSTRAP_QC_GIT_DISALLOW_DESCRIPTION'] = 'Доступ к папке с Git должен быть закрыт';
 $MESS['PROMINADO_BOOTSTRAP_QC_GIT_DISALLOW_HOWTO'] = 'Описание как проверять';
 
+$MESS['PROMINADO_BOOTSTRAP_QC_GIT_IGNORE_NAME'] = 'Добавить файл .gitignore';
+$MESS['PROMINADO_BOOTSTRAP_QC_GIT_IGNORE_DESCRIPTION'] = 'Добавить файл .gitignore';
+$MESS['PROMINADO_BOOTSTRAP_QC_GIT_IGNORE_HOWTO'] = 'Описание как проверять';
+
 $MESS['PROMINADO_BOOTSTRAP_QC_SITE_EMAIL_NAME'] = 'Проверить электронную почту в настроках сайта';
 $MESS['PROMINADO_BOOTSTRAP_QC_SITE_EMAIL_DESCRIPTION'] = 'Электронная почта в настройках сайта должна быть указана';
 $MESS['PROMINADO_BOOTSTRAP_QC_SITE_EMAIL_HOWTO'] = 'Описание как проверять';
