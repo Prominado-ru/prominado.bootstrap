@@ -8,7 +8,7 @@ use Bitrix\Main\Config\Option;
 
 Loc::loadMessages(__FILE__);
 
-class Panel
+class UI
 {
     public function showPanel()
     {

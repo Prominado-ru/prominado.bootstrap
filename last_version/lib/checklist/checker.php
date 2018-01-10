@@ -14,6 +14,55 @@ Loc::loadMessages(__FILE__);
 
 class Checker
 {
+    public function checkGit()
+    {
+        $dir = new IO\Directory(Application::getDocumentRoot() . '/.git/');
+        if ($dir->isExists()) {
+            return [
+                'STATUS'  => true,
+                'MESSAGE' => [
+                    'PREVIEW' => Loc::getMessage('PROMINADO_BOOTSTRAP_CHECKER_GIT_IS')
+                ],
+            ];
+        }
+
+        return [
+            'STATUS'  => false,
+            'MESSAGE' => [
+                'PREVIEW' => Loc::getMessage('PROMINADO_BOOTSTRAP_CHECKER_GIT_NO')
+            ],
+        ];
+    }
+
+    public function checkGitDisallow()
+    {
+        $file = new IO\File(Application::getDocumentRoot() . '/.git/.htaccess');
+        if ($file->isExists()) {
+            try {
+                $content = explode(PHP_EOL, $file->getContents());
+                foreach ($content as $row) {
+                    if ($row === 'Deny from all') {
+                        return [
+                            'STATUS'  => true,
+                            'MESSAGE' => [
+                                'PREVIEW' => Loc::getMessage('PROMINADO_BOOTSTRAP_CHECKER_GIT_DISALLOW_YES'),
+                            ],
+                        ];
+                    }
+                }
+            } catch (IO\FileNotFoundException $exception) {
+
+            }
+        }
+
+        return [
+            'STATUS'  => false,
+            'MESSAGE' => [
+                'PREVIEW' => Loc::getMessage('PROMINADO_BOOTSTRAP_CHECKER_GIT_DISALLOW_NO')
+            ],
+        ];
+    }
+
     public function checkSiteEmail()
     {
         try {
@@ -124,12 +173,30 @@ class Checker
     {
         $file = new IO\File(Application::getDocumentRoot() . '/robots.txt');
         if ($file->isExists()) {
-            return [
-                'STATUS'  => true,
-                'MESSAGE' => [
-                    'PREVIEW' => Loc::getMessage('PROMINADO_BOOTSTRAP_CHECKER_ROB_IS'),
-                ],
-            ];
+            try {
+                $content = explode(PHP_EOL, $file->getContents());
+                foreach ($content as $row) {
+                    $data = array_map('trim', explode(':', $row));
+
+                    if (($data[0] === 'Disallow') && ($data[1] === '/')) {
+                        return [
+                            'STATUS'  => false,
+                            'MESSAGE' => [
+                                'PREVIEW' => Loc::getMessage('PROMINADO_BOOTSTRAP_CHECKER_ROB_DISALLOW'),
+                            ],
+                        ];
+                    }
+                }
+
+                return [
+                    'STATUS'  => true,
+                    'MESSAGE' => [
+                        'PREVIEW' => Loc::getMessage('PROMINADO_BOOTSTRAP_CHECKER_ROB_IS'),
+                    ],
+                ];
+            } catch (IO\FileNotFoundException $exception) {
+
+            }
         }
 
         return [

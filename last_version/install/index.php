@@ -14,7 +14,7 @@ class prominado_bootstrap extends CModule
     var $MODULE_NAME;
     var $MODULE_DESCRIPTION;
     var $MODULE_CSS;
-    var $MODULE_GROUP_RIGHTS = 'Y';
+    var $MODULE_GROUP_RIGHTS = 'N';
 
     public function prominado_bootstrap()
     {
@@ -36,7 +36,7 @@ class prominado_bootstrap extends CModule
     {
         ModuleManager::registerModule($this->MODULE_ID);
         $eventManager = \Bitrix\Main\EventManager::getInstance();
-        $eventManager->registerEventHandler('main', 'OnBeforeProlog', $this->MODULE_ID, '\\Prominado\\Bootstrap\\Panel',
+        $eventManager->registerEventHandler('main', 'OnBeforeProlog', $this->MODULE_ID, '\\Prominado\\Bootstrap\\UI',
             'showPanel');
         $eventManager->registerEventHandler('main', 'OnCheckListGet', $this->MODULE_ID,
             '\\Prominado\\Bootstrap\\CheckList', 'onCheckListGet');
@@ -50,7 +50,7 @@ class prominado_bootstrap extends CModule
     {
         $eventManager = \Bitrix\Main\EventManager::getInstance();
         $eventManager->unRegisterEventHandler('main', 'OnBeforeProlog', $this->MODULE_ID,
-            '\\Prominado\\Bootstrap\\Panel', 'showPanel');
+            '\\Prominado\\Bootstrap\\UI', 'showPanel');
         $eventManager->unRegisterEventHandler('main', 'OnCheckListGet', $this->MODULE_ID,
             '\\Prominado\\Bootstrap\\CheckList', 'onCheckListGet');
         $eventManager->unRegisterEventHandler('iblock', 'OnIBlockPropertyBuildList', $this->MODULE_ID,
@@ -60,10 +60,22 @@ class prominado_bootstrap extends CModule
         return true;
     }
 
+    public function InstallFiles()
+    {
+        CopyDirFiles(Application::getDocumentRoot() . '/bitrix/modules/' . $this->MODULE_ID . '/install/js',
+            Application::getDocumentRoot() . '/bitrix/js', true, true);
+    }
+
+    public function UnInstallFiles()
+    {
+        DeleteDirFilesEx(Application::getDocumentRoot() . '/bitrix/js/' . $this->MODULE_ID . '/');
+    }
+
     public function DoInstall()
     {
         global $APPLICATION;
         $this->InstallDB();
+        $this->InstallFiles();
 
         $APPLICATION->IncludeAdminFile(Loc::getMessage('PROMINADO_BOOTSTRAP_INSTALL_TITLE'),
             Application::getDocumentRoot() . '/bitrix/modules/' . $this->MODULE_ID . '/install/step.php');
@@ -74,6 +86,8 @@ class prominado_bootstrap extends CModule
         global $APPLICATION;
 
         $this->UnInstallDB();
+        $this->UnInstallFiles();
+
         $APPLICATION->IncludeAdminFile(Loc::getMessage('PROMINADO_BOOTSTRAP_UNINSTALL_TITLE'),
             Application::getDocumentRoot() . '/bitrix/modules/' . $this->MODULE_ID . '/install/unstep.php');
     }
