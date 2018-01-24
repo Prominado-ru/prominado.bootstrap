@@ -3,9 +3,9 @@ pipeline {
   stages {
     stage('Create archive') {
       steps {
-        sh '''cd $WORKSPACE
+        sh '''#!/bin/bash
+cd $WORKSPACE
 ls
-mv last_version .last_version
 '''
       }
     }
