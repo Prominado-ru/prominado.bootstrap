@@ -1,0 +1,26 @@
+{
+  "name": "prominado.bootstrap",
+  "version": "1.0.0",
+  "description": "Типовой сайт, который следует устанавливать при разработке нового проекта. Он не создает лишних инфоблоков, которые обычно все равно удаляются, устанавливает полезные функции, добавляет наш чек-лист в Монитор качества",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-file": "^0.3.0",
+    "gulp-git": "^2.4.2",
+    "gulp-iconv": "0.0.1",
+    "gulp-zip": "^4.0.0",
+    "moment": "^2.19.3",
+    "run-sequence": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prominado-ru/prominado.bootstrap.git"
+  },
+  "author": "Panteleev Sergey <sergey@s-panteleev.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Prominado-ru/prominado.bootstrap/issues"
+  },
+  "homepage": "https://github.com/Prominado-ru/prominado.bootstrap#readme"
+}

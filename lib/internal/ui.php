@@ -1,6 +1,6 @@
 <?php
 
-namespace Prominado\Bootstrap;
+namespace Prominado\Bootstrap\Internal;
 
 use Bitrix\Main\ArgumentNullException;
 use Bitrix\Main\Localization\Loc;

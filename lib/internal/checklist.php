@@ -1,6 +1,6 @@
 <?php
 
-namespace Prominado\Bootstrap;
+namespace Prominado\Bootstrap\Internal;
 
 use Bitrix\Main\Localization\Loc;
 
@@ -25,7 +25,7 @@ class CheckList
             'PARENT'      => 'PROMINADO_GIT',
             'REQUIRE'     => 'Y',
             'AUTO'        => 'Y',
-            'CLASS_NAME'  => '\\Prominado\\Bootstrap\\Checklist\\Checker',
+            'CLASS_NAME'  => '\\Prominado\\Bootstrap\\\Internal\Checklist\\Checker',
             'METHOD_NAME' => 'checkGit',
             'NAME'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_GIT_NAME'),
             'DESC'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_GIT_DESCRIPTION'),
@@ -36,7 +36,7 @@ class CheckList
             'PARENT'      => 'PROMINADO_GIT',
             'REQUIRE'     => 'Y',
             'AUTO'        => 'Y',
-            'CLASS_NAME'  => '\\Prominado\\Bootstrap\\Checklist\\Checker',
+            'CLASS_NAME'  => '\\Prominado\\Bootstrap\\\Internal\Checklist\\Checker',
             'METHOD_NAME' => 'checkGitDisallow',
             'NAME'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_GIT_DISALLOW_NAME'),
             'DESC'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_GIT_DISALLOW_DESCRIPTION'),
@@ -47,7 +47,7 @@ class CheckList
             'PARENT'      => 'PROMINADO_GIT',
             'REQUIRE'     => 'Y',
             'AUTO'        => 'Y',
-            'CLASS_NAME'  => '\\Prominado\\Bootstrap\\Checklist\\Checker',
+            'CLASS_NAME'  => '\\Prominado\\Bootstrap\\\Internal\Checklist\\Checker',
             'METHOD_NAME' => 'checkGitignore',
             'NAME'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_GIT_IGNORE_NAME'),
             'DESC'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_GIT_IGNORE_DESCRIPTION'),
@@ -63,7 +63,7 @@ class CheckList
             'PARENT'      => 'PROMINADO_ADMIN',
             'REQUIRE'     => 'Y',
             'AUTO'        => 'Y',
-            'CLASS_NAME'  => '\\Prominado\\Bootstrap\\Checklist\\Checker',
+            'CLASS_NAME'  => '\\Prominado\\Bootstrap\\\Internal\Checklist\\Checker',
             'METHOD_NAME' => 'checkSiteEmail',
             'NAME'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_SITE_EMAIL_NAME'),
             'DESC'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_SITE_EMAIL_DESCRIPTION'),
@@ -74,7 +74,7 @@ class CheckList
             'PARENT'      => 'PROMINADO_ADMIN',
             'REQUIRE'     => 'Y',
             'AUTO'        => 'Y',
-            'CLASS_NAME'  => '\\Prominado\\Bootstrap\\Checklist\\Checker',
+            'CLASS_NAME'  => '\\Prominado\\Bootstrap\\\Internal\Checklist\\Checker',
             'METHOD_NAME' => 'checkAdminsPassword',
             'NAME'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_USER_ADMIN_NAME'),
             'DESC'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_USER_ADMIN_DESCRIPTION'),
@@ -85,7 +85,7 @@ class CheckList
             'PARENT'      => 'PROMINADO_ADMIN',
             'REQUIRE'     => 'Y',
             'AUTO'        => 'Y',
-            'CLASS_NAME'  => '\\Prominado\\Bootstrap\\Checklist\\Checker',
+            'CLASS_NAME'  => '\\Prominado\\Bootstrap\\\Internal\Checklist\\Checker',
             'METHOD_NAME' => 'checkDeveloperInfo',
             'NAME'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_DEVELOPER_NAME'),
             'DESC'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_DEVELOPER_DESCRIPTION'),
@@ -101,7 +101,7 @@ class CheckList
             'PARENT'      => 'PROMINADO_FINAL',
             'REQUIRE'     => 'Y',
             'AUTO'        => 'Y',
-            'CLASS_NAME'  => '\\Prominado\\Bootstrap\\Checklist\\Checker',
+            'CLASS_NAME'  => '\\Prominado\\Bootstrap\\\Internal\Checklist\\Checker',
             'METHOD_NAME' => 'checkFavicon',
             'NAME'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_FAVICON_NAME'),
             'DESC'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_FAVICON_DESCRIPTION'),
@@ -112,7 +112,7 @@ class CheckList
             'PARENT'      => 'PROMINADO_FINAL',
             'REQUIRE'     => 'Y',
             'AUTO'        => 'Y',
-            'CLASS_NAME'  => '\\Prominado\\Bootstrap\\Checklist\\Checker',
+            'CLASS_NAME'  => '\\Prominado\\Bootstrap\\\Internal\Checklist\\Checker',
             'METHOD_NAME' => 'checkRobots',
             'NAME'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_ROBOTS_TXT_NAME'),
             'DESC'        => Loc::getMessage('PROMINADO_BOOTSTRAP_QC_ROBOTS_TXT_DESCRIPTION'),

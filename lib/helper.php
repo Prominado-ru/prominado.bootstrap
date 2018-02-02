@@ -10,7 +10,7 @@ Loc::loadMessages(__FILE__);
 
 
 /**
- * Class Functions
+ * Class Helper
  * @link https://github.com/Prominado-ru/span.bootstrap
  * @package Prominado\Bootstrap
  */

@@ -123,7 +123,7 @@ class DeveloperStep extends CWizardStep
     {
         $this->SetStepID('developer');
         $this->SetTitle(Loc::getMessage('PROMINADO_BOOTSTRAP_INSTALL_DEVELOPER_INFO'));
-        $this->SetNextStep('install');
+        $this->SetNextStep('settings');
         $this->SetNextCaption(Loc::getMessage('PROMINADO_BOOTSTRAP_INSTALL_NEXT'));
 
         $wizard =& $this->GetWizard();
@@ -191,6 +191,76 @@ class DeveloperStep extends CWizardStep
     }
 }
 
+class SettingsStep extends CWizardStep
+{
+    public function InitStep()
+    {
+        $this->SetStepID('settings');
+        $this->SetTitle(Loc::getMessage('PROMINADO_BOOTSTRAP_INSTALL_SETTINGS'));
+        $this->SetNextStep('install');
+        $this->SetNextCaption(Loc::getMessage('PROMINADO_BOOTSTRAP_INSTALL_NEXT'));
+
+        $wizard =& $this->GetWizard();
+        $wizard->SetDefaultVars(
+            [
+                'removeEnLanguage'   => 'Y',
+                'disableJSCombine'   => 'Y',
+                'enableMutualIblock' => 'Y'
+            ]
+        );
+    }
+
+    function ShowStep()
+    {
+        $wizard = &$this->GetWizard();
+
+        $this->content = '<div class="wizard-input-form">';
+
+        $this->content .= '<div class="wizard-input-form-block">' .
+            $this->ShowCheckboxField('removeEnLanguage', 'Y', [
+                'id'      => 'remove-en-language',
+                'onClick' => ''
+            ]) .
+            '<label for="remove-en-language" class="wizard-input-title">' . Loc::getMessage('PROMINADO_BOOTSTRAP_INSTALL_REMOVE_EN') . '</label>
+            </div>
+            ';
+
+        $this->content .= '<div class="wizard-input-form-block">' .
+            $this->ShowCheckboxField('disableJSCombine', 'Y', [
+                'id'      => 'disable-js-combine',
+                'onClick' => ''
+            ]) .
+            '<label for="disable-js-combine" class="wizard-input-title">' . Loc::getMessage('PROMINADO_BOOTSTRAP_INSTALL_DISABLE_JS_COMBINE') . '</label>
+            </div>
+            ';
+
+        $this->content .= '<div class="wizard-input-form-block">' .
+            $this->ShowCheckboxField('enableMutualIblock', 'Y', [
+                'id'      => 'enable-mutual-iblock',
+                'onClick' => ''
+            ]) .
+            '<label for="enable-mutual-iblock" class="wizard-input-title">' . Loc::getMessage('PROMINADO_BOOTSTRAP_INSTALL_ENABLE_MUTUAL_IBLOCK') . '</label>
+            </div>
+            ';
+
+        $this->content .= '</div>';
+    }
+
+    public function OnPostForm()
+    {
+        $wizard = &$this->GetWizard();
+
+        $show_developer = $wizard->GetVar('showDeveloperData');
+        $developer_name = $wizard->GetVar('developer_name');
+
+        if ($show_developer) {
+            if (!$developer_name) {
+                $this->SetError(Loc::getMessage('PROMINADO_BOOTSTRAP_INSTALL_ERROR_DEVELOPER'));
+            }
+        }
+    }
+}
+
 class DataInstallStep extends CDataInstallWizardStep
 {
     public function InitStep()
@@ -204,9 +274,6 @@ class DataInstallStep extends CDataInstallWizardStep
     public function CorrectServices(&$arServices)
     {
         $wizard =& $this->GetWizard();
-        if ($wizard->GetVar('installDemoData') !== 'Y') {
-            // todo: Demo data
-        }
     }
 }
 

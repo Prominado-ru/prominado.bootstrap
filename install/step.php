@@ -11,5 +11,5 @@ Loc::loadMessages(__FILE__);
 <?= CAdminMessage::ShowNote(Loc::getMessage('PROMINADO_BOOTSTRAP_INSTALL_OK')); ?>
 <form action="<?= $APPLICATION->GetCurPage(); ?>">
     <input type="hidden" name="lang" value="<?= LANG; ?>"/>
-    <input type="submit" name="" value="<? Loc::getMessage('PROMINADO_BOOTSTRAP_MOD_BACK'); ?>"/>
+    <input type="submit" name="" value="<?= Loc::getMessage('PROMINADO_BOOTSTRAP_MOD_BACK'); ?>"/>
 </form>

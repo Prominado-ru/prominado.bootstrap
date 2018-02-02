@@ -24,6 +24,6 @@ $arWizardDescription = [
         ['SCRIPT' => 'wizard_sol']
     ],
     'STEPS'       => defined('WIZARD_DEFAULT_SITE_ID') ?
-        ['SiteSettingsStep', 'DeveloperStep', 'DataInstallStep', 'SuccessStep'] :
-        ['SelectSiteStep', 'SiteSettingsStep', 'DeveloperStep', 'DataInstallStep', 'SuccessStep']
+        ['SiteSettingsStep', 'DeveloperStep', 'SettingsStep', 'DataInstallStep', 'SuccessStep'] :
+        ['SelectSiteStep', 'SiteSettingsStep', 'DeveloperStep', 'SettingsStep', 'DataInstallStep', 'SuccessStep']
 ];

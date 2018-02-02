@@ -1,6 +1,6 @@
 <?php
 
-namespace Prominado\Bootstrap\Checklist;
+namespace Prominado\Bootstrap\Internal\Checklist;
 
 use Bitrix\Main\ArgumentException;
 use Bitrix\Main\ArgumentNullException;

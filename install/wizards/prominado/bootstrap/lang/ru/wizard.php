@@ -22,7 +22,10 @@ $MESS['PROMINADO_BOOTSTRAP_INSTALL_TO_WEBSITE'] = 'Перейти на сайт';
 $MESS['PROMINADO_BOOTSTRAP_INSTALL_TITLE'] = 'Установка решения';
 $MESS['PROMINADO_BOOTSTRAP_INSTALL_END_TITLE'] = 'Установка продукта завершена!';
 $MESS['PROMINADO_BOOTSTRAP_INSTALL_DEVELOPER_SHOW'] = 'Заполнить данные о разработчике';
-$MESS['PROMINADO_BOOTSTRAP_INSTALL_HUMANS_SHOW'] = 'Заполнить данные для humans.txt';
+$MESS['PROMINADO_BOOTSTRAP_INSTALL_SETTINGS'] = 'Настройки сайта';
+$MESS['PROMINADO_BOOTSTRAP_INSTALL_REMOVE_EN'] = 'Удалить английский язык';
+$MESS['PROMINADO_BOOTSTRAP_INSTALL_DISABLE_JS_COMBINE'] = 'Отключить объединение JS/CSS';
+$MESS['PROMINADO_BOOTSTRAP_INSTALL_ENABLE_MUTUAL_IBLOCK'] = 'Включить совместный режим просмотра в инфоблоках';
 
 $MESS['PROMINADO_BOOTSTRAP_INSTALL_ERROR_SITE_NAME'] = 'Не введено название сайта';
 $MESS['PROMINADO_BOOTSTRAP_INSTALL_ERROR_EMAIL'] = 'Не указана электронная почта';
